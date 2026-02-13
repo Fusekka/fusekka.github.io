@@ -9,37 +9,35 @@ theme = "github.com/adityatelange/hugo-PaperMod"
 
 enableRobotsTXT = true
 
-# HTMLタグ（<br>など）を許可する設定
 [markup.goldmark.renderer]
   unsafe = true
-  
+
 [module]
   [[module.imports]]
     path = "github.com/adityatelange/hugo-PaperMod"
 
 [params]
-    # Dropbox Techに倣い、清潔感のあるライトモード固定
     defaultTheme = "light"
     disableThemeToggle = true
-    
-    description = "Cisco, Yamaha, Juniperなどのネットワーク機器ジャンク修理記録。仕入れから修理方法、販売利益まで全てを公開する副業エンジニアブログ。"
     author = "Fusekka"
     ShowReadingTime = true
     ShowShareButtons = true
-    ShowPostNavLinks = true
     ShowBreadCrumbs = true
-    ShowCodeCopyButtons = true
 
-    # 海外テックサイトの定番フォントセット
     customFontFace = "Inter:wght@400;600;800&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
 
     [params.homeInfoParams]
         Title = "Fusekka"
         Content = """
 手取り16万の社畜です。ジャンク修理で小銭を稼いでいます。<br>
-このブログを真似するだけで億万長者に！？（なれません）<br><br>
- [記事を見る](/posts) ／ [愛用ツールを見る](/posts/tools)
+このブログを真似するだけで億万長者に！？（なれません）
 """
+        [[params.homeInfoParams.buttons]]
+            name = "記事を見る"
+            url = "/posts"
+        [[params.homeInfoParams.buttons]]
+            name = "愛用ツールを見る"
+            url = "/posts/tools"
 
     [[params.socialIcons]]
         name = "github"
