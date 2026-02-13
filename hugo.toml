@@ -22,5 +22,5 @@ title = 'fusekka.com'
     # これを指定するとリンクの色などが変わります
     # (後述のCSSでより細かく設定するので、一旦デフォルトでもOK)
 
-    # Google Fontsから技術者っぽいフォントを読み込む
-    customFontFace = "JetBrains Mono"
+    # 日本語と英数字、両方の最高フォントを読み込む
+    customFontFace = "Zen+Kaku+Gothic+New:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap"
