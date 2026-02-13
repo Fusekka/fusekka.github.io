@@ -4,8 +4,9 @@ hasCJKLanguage = true
 title = 'Fusekka | ジャンク修理とその他もろもろブログ'
 theme = "github.com/adityatelange/hugo-PaperMod"
 
-# 1ページに表示する記事数を5件にする
-paginate = 5
+# 【ここを修正】Hugo v0.128以降の新しい書き方
+[pagination]
+  pagerSize = 5
 
 # SEO対策：ロボット用
 enableRobotsTXT = true
@@ -15,33 +16,29 @@ enableRobotsTXT = true
     path = "github.com/adityatelange/hugo-PaperMod"
 
 [params]
-    # 【重要】背景色を少し明るくしたため、ダークモードに固定します
     defaultTheme = "dark"
     disableThemeToggle = true
     
-    # プロ推奨のSEO・機能設定
     description = "Cisco, Yamaha, Juniperなどのネットワーク機器ジャンク修理記録。仕入れ額と修理後の販売利益も公開する副業エンジニアブログ。"
     author = "Fusekka"
     ShowReadingTime = true
     ShowShareButtons = true
     ShowPostNavLinks = true
-    ShowBreadCrumbs = true     # パンくずリスト
-    ShowCodeCopyButtons = true # コードコピーボタン
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
 
-    # トップページ設定：挨拶の後に最新記事5件を表示する設定
     [params.homeInfoParams]
         Title = "Fusekka | 最近の投稿"
         Content = """
 手取り16万の社畜です。ジャンク修理で小銭を稼いでいます。
 このブログを真似するだけで億万長者に！？(なれません)
+
 [過去に修理したもの](/posts) ／ [愛用ツール紹介](/posts/tools)
 """
 
-    # プロフィールモードはオフ（記事一覧を出すため）
     [params.profileMode]
         enabled = false
 
-    # フッターのSNSアイコン
     [[params.socialIcons]]
         name = "github"
         url = "https://github.com/Fusekka"
@@ -49,7 +46,6 @@ enableRobotsTXT = true
         name = "x"
         url = "https://x.com/Fusekka"
 
-# メニュー設定
 [[menu.main]]
     identifier = "search"
     name = "SEARCH"
@@ -66,6 +62,5 @@ enableRobotsTXT = true
     url = "/tags/"
     weight = 30
 
-# 検索機能用の出力設定
 [outputs]
     home = ["HTML", "RSS", "JSON"]
