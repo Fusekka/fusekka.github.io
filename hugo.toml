@@ -1,5 +1,6 @@
 baseURL = 'https://fusekka.com'
 languageCode = 'ja'
+hasCJKLanguage = true
 title = 'fusekka.com'
 
 # テーマを直接読み込む設定
@@ -8,5 +9,18 @@ title = 'fusekka.com'
     path = "github.com/adityatelange/hugo-PaperMod"
 
 [params.homeInfoParams]
-    Title = "fusekka.com へようこそ"
-    Content = "技術で人生を切り拓くログです。"
+    Title = "fusekkaのブログへようこそ"
+    Content = "朗らかに生きる人間のブログです"
+
+[params]
+    # ダークモードを標準にする（インダストリアルな重厚感のため）
+    defaultTheme = "dark"
+    # 右上の月/太陽アイコン（テーマ切り替え）を消して固定したい場合は設定
+    # disableThemeToggle = true 
+
+    # サイト全体のアクセントカラー（錆びたネジや、警告ラベルのようなオレンジ）
+    # これを指定するとリンクの色などが変わります
+    # (後述のCSSでより細かく設定するので、一旦デフォルトでもOK)
+
+    # Google Fontsから技術者っぽいフォントを読み込む
+    customFontFace = "JetBrains Mono"
