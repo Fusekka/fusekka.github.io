@@ -1,7 +1,7 @@
 baseURL = 'https://fusekka.com/'
 languageCode = 'ja'
 hasCJKLanguage = true
-title = 'Fusekka | Tech & Repair'
+title = 'Fusekka | ジャンク修理副業とその他もろもろのブログ'
 theme = "github.com/adityatelange/hugo-PaperMod"
 
 [pagination]
@@ -9,6 +9,7 @@ theme = "github.com/adityatelange/hugo-PaperMod"
 
 enableRobotsTXT = true
 
+# HTMLタグ（<br>など）を許可し、改行を有効にする
 [markup.goldmark.renderer]
   unsafe = true
 
@@ -48,17 +49,17 @@ enableRobotsTXT = true
 
 [[menu.main]]
     identifier = "search"
-    name = "SEARCH"
+    name = "記事検索"
     url = "/search/"
     weight = 10
 [[menu.main]]
     identifier = "categories"
-    name = "CATEGORIES"
+    name = "カテゴリ"
     url = "/categories/"
     weight = 20
 [[menu.main]]
     identifier = "tags"
-    name = "TAGS"
+    name = "タグ一覧"
     url = "/tags/"
     weight = 30
 
