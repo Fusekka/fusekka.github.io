@@ -1,88 +1,48 @@
-/* --- Vintage Industrial 修正版 --- */
+/* --- Vintage Industrial 視認性向上版 --- */
 
 :root {
-    --theme: #121212 !important;   /* 背景をより深く（漆黒に近い鉄） */
-    --primary: #ffffff !important; /* メイン文字は純白（読みやすさ最優先） */
-    --secondary: #adb5bd !important; /* サブ文字：明るめのグレー */
-    --tertiary: #ff9f1c !important;  /* アクセント：インダストリアル・オレンジ */
-    --content: #1e1f22 !important;  /* カード：少しだけ浮き上がった鉄板 */
+    /* 背景：少し明るいチャコールグレー（DULTONの工具箱のイメージ） */
+    --theme: #2a2d32 !important; 
+    /* 文字色：視認性の高いシルバーホワイト */
+    --primary: #eceff4 !important;
+    /* サブ文字：くすんだスチールの色 */
+    --secondary: #adb5bd !important;
+    /* 記事カード：背景より少しだけ明るいグレーで段差を表現 */
+    --content: #33383e !important;
+    /* アクセント：インダストリアル・イエロー */
+    --tertiary: #eab308 !important; 
 }
 
-/* サイト全体：フォントの視認性を上げる */
+/* サイト全体：フォントの読みやすさ */
 body {
     font-family: 'JetBrains Mono', 'Zen Kaku Gothic New', sans-serif !important;
-    -webkit-font-smoothing: antialiased; /* 文字をくっきりさせる */
 }
 
-/* トップページの「ようこそ」部分の強調 */
+/* トップの挨拶エリアの装飾 */
 .home-info {
-    border-left: 8px solid var(--tertiary); /* 左側に警告カラーの極太ライン */
+    border-left: 8px solid var(--tertiary);
     padding-left: 20px;
-    margin-bottom: 40px;
+    margin: 40px 0 !important;
 }
 
-.home-info h1 {
-    font-size: 2.5rem !important;
-    font-weight: 800 !important;
-    letter-spacing: -1px;
-}
-
-/* 記事カード：もっと「鉄板」っぽく、立体感を出す */
+/* 記事カードのデザイン */
 .entry-card {
     background: var(--content) !important;
-    border: 1px solid #343a40 !important;
-    border-radius: 0 !important;
-    box-shadow: 10px 10px 0px #000000 !important; /* 厚みのある黒い影 */
+    border: 1px solid #454c59 !important;
+    box-shadow: 6px 6px 0px #1a1c1e !important; /* 立体的な黒い影 */
     margin-bottom: 25px !important;
     padding: 25px !important;
+    border-radius: 0 !important;
 }
 
-/* カードの中のタイトルを大きく、読みやすく */
+/* タイトルをオレンジにして見やすくする */
 .entry-header h2 {
-    font-size: 24px !important;
-    color: var(--tertiary) !important; /* タイトルをオレンジにして視線を誘導 */
-}
-
-/* リンクをマウスオーバーした時の反応を強くする */
-a:hover {
-    background-color: rgba(255, 159, 28, 0.1); /* オレンジの光 */
     color: var(--tertiary) !important;
 }
 
-/* ヘッダーの固定とデザイン */
-.header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: var(--theme); /* 背景と一体化 */
-    border-bottom: 2px solid var(--tertiary); /* オレンジのラインで区切る */
-    padding: 10px 0;
-}
-
-/* メニュー項目を「ボタン」っぽくする */
-#menu li {
-    margin-left: 20px;
-}
-
-#menu a {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    padding: 5px 10px;
-    border: 1px transparent;
-}
-
-#menu a:hover {
-    border: 1px solid var(--tertiary); /* ホバーで枠線が出る（計器ボタン風） */
+/* タグのデザイン */
+.post-tags a {
+    background: #3b4252 !important;
+    border: 1px dashed var(--tertiary) !important;
     color: var(--tertiary) !important;
-}
-
-/* スマホ表示時のハンバーガーメニュー内の調整 */
-@media screen and (max-width: 768px) {
-    #menu {
-        background: var(--content);
-        border: 1px solid var(--tertiary);
-        padding: 20px;
-    }
 }
