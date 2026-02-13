@@ -17,7 +17,7 @@ title = 'fusekka.com'
     # ダークモードを標準にする（インダストリアルな重厚感のため）
     defaultTheme = "dark"
     # 右上の月/太陽アイコン（テーマ切り替え）を消して固定したい場合は設定
-    # disableThemeToggle = true 
+    disableThemeToggle = true 
 
     # サイト全体のアクセントカラー（錆びたネジや、警告ラベルのようなオレンジ）
     # これを指定するとリンクの色などが変わります
