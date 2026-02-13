@@ -1,92 +1,84 @@
-/* --- Fusekka Custom "Marine Tech" Style --- */
+/* --- Fusekka Marine Custom Style --- */
 
 :root {
     --theme: #ffffff !important;
     --primary: #1E1919 !important;
     --secondary: #637282 !important;
-    --content: #ffffff !important;
-    /* ターコイズブルー */
-    --tertiary: #00A69C !important; 
-    /* ヘッダー文字色用 */
-    --header-text: #ffffff !important;
+    --tertiary: #00A69C !important; /* ターコイズブルー */
 }
 
-body {
-    font-family: 'Inter', 'Zen Kaku Gothic New', sans-serif !important;
-}
-
-/* --- 1. ヘッダーのカスタマイズ (ターコイズ + 波) --- */
+/* --- 1. ヘッダー：背景ターコイズ ＋ 波デザイン --- */
 .header {
     background: var(--tertiary) !important;
-    padding: 20px 0 50px 0 !important; /* 下側に波のスペースを確保 */
+    padding: 20px 0 60px 0 !important;
     position: relative;
     border-bottom: none !important;
 }
 
-/* ヘッダーの文字を白にする */
-.nav a, .logo a {
-    color: var(--header-text) !important;
+/* ヘッダー文字を白に */
+.nav a, .logo a, #menu a {
+    color: #ffffff !important;
     font-weight: 600;
 }
 
-/* ヘッダーの波デザイン (SVG背景) */
+/* 波のデザイン (SVG) */
 .header::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -1px; /* 隙間埋め */
     left: 0;
     width: 100%;
-    height: 40px;
+    height: 50px;
     background-color: var(--theme);
-    /* 波の形に切り抜く */
-    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C57.19,102.66,113,109.19,169.5,109.21c56.5.02,113.11-6.56,169.5-12.77Z" fill="black"></path></svg>');
-    mask-size: 1200px 40px;
-    mask-repeat: repeat-x;
     -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C57.19,102.66,113,109.19,169.5,109.21c56.5.02,113.11-6.56,169.5-12.77Z" fill="black"></path></svg>');
-    -webkit-mask-size: 1200px 40px;
-    -webkit-mask-repeat: repeat-x;
+    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C57.19,102.66,113,109.19,169.5,109.21c56.5.02,113.11-6.56,169.5-12.77Z" fill="black"></path></svg>');
+    -webkit-mask-size: 100% 50px;
+    mask-size: 100% 50px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
 }
 
-/* --- 2. ソーシャルアイコンをタイトル(Fusekka)の上に移動 --- */
+/* --- 2. アイコンをタイトル(Fusekka)の上に移動 --- */
 .home-info {
     display: flex;
     flex-direction: column;
-    margin-top: 60px !important;
+    margin-top: 40px !important;
 }
 
-/* 並び替えの指定 */
 .social-icons {
-    order: -1; /* 一番上に配置 */
-    margin-bottom: 20px !important;
+    order: -1 !important; /* 一番上に */
+    margin-bottom: 10px !important;
     margin-left: 0 !important;
     justify-content: flex-start !important;
 }
 
 .home-info h1 {
-    order: 0;
-    font-size: 4.5rem !important;
-    margin-bottom: 15px !important;
+    order: 0 !important;
+    font-size: 4rem !important;
+    font-weight: 800;
+    margin-bottom: 10px !important;
 }
 
 .home-info .p {
-    order: 1;
+    order: 1 !important;
+    font-size: 1.1rem;
 }
 
 .home-info .buttons {
-    order: 2;
+    order: 2 !important;
+    margin-top: 20px;
 }
 
-/* --- 3. 「最新の投稿」タイトルの追加 --- */
+/* --- 3. 最新の投稿 タイトル追加 --- */
 .main:not(.post-content)::before {
     content: "最新の投稿";
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 800;
     color: var(--primary);
-    margin: 60px 0 20px 0;
-    padding-bottom: 10px;
-    border-bottom: 3px solid var(--tertiary);
-    width: fit-content;
+    margin: 80px 0 20px 0;
+    padding-left: 15px;
+    border-left: 6px solid var(--tertiary); /* 左にターコイズの棒 */
 }
 
 /* 記事カードの調整 */
@@ -98,9 +90,10 @@ body {
     border-radius: 0 !important;
 }
 
-/* ボタンのデザイン調整 */
+/* ボタンをターコイズに */
 .home-info a {
     background-color: var(--tertiary) !important;
     border: none !important;
-    border-radius: 6px !important;
+    border-radius: 4px !important;
+    color: #fff !important;
 }
