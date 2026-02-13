@@ -48,3 +48,41 @@ a:hover {
     background-color: rgba(255, 159, 28, 0.1); /* オレンジの光 */
     color: var(--tertiary) !important;
 }
+
+/* ヘッダーの固定とデザイン */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--theme); /* 背景と一体化 */
+    border-bottom: 2px solid var(--tertiary); /* オレンジのラインで区切る */
+    padding: 10px 0;
+}
+
+/* メニュー項目を「ボタン」っぽくする */
+#menu li {
+    margin-left: 20px;
+}
+
+#menu a {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    border: 1px transparent;
+}
+
+#menu a:hover {
+    border: 1px solid var(--tertiary); /* ホバーで枠線が出る（計器ボタン風） */
+    color: var(--tertiary) !important;
+}
+
+/* スマホ表示時のハンバーガーメニュー内の調整 */
+@media screen and (max-width: 768px) {
+    #menu {
+        background: var(--content);
+        border: 1px solid var(--tertiary);
+        padding: 20px;
+    }
+}
