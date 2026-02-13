@@ -1,87 +1,106 @@
-/* --- Dropbox Tech Style Theme --- */
+/* --- Fusekka Custom "Marine Tech" Style --- */
 
 :root {
-    /* 背景：最高級の白 */
     --theme: #ffffff !important;
-    /* メイン文字：Dropbox特有の深い黒に近い色 */
     --primary: #1E1919 !important;
-    /* サブ文字：洗練されたグレー */
     --secondary: #637282 !important;
-    /* 記事カード背景 */
     --content: #ffffff !important;
-    /* アクセント：Dropbox Blue */
-    --tertiary: #0061FF !important;
+    /* ターコイズブルー */
+    --tertiary: #00A69C !important; 
+    /* ヘッダー文字色用 */
+    --header-text: #ffffff !important;
 }
 
 body {
     font-family: 'Inter', 'Zen Kaku Gothic New', sans-serif !important;
-    background-color: var(--theme) !important;
-    color: var(--primary) !important;
-    line-height: 1.6;
 }
 
-/* 挨拶エリアを Dropbox Tech のヒーローセクション風に */
+/* --- 1. ヘッダーのカスタマイズ (ターコイズ + 波) --- */
+.header {
+    background: var(--tertiary) !important;
+    padding: 20px 0 50px 0 !important; /* 下側に波のスペースを確保 */
+    position: relative;
+    border-bottom: none !important;
+}
+
+/* ヘッダーの文字を白にする */
+.nav a, .logo a {
+    color: var(--header-text) !important;
+    font-weight: 600;
+}
+
+/* ヘッダーの波デザイン (SVG背景) */
+.header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: var(--theme);
+    /* 波の形に切り抜く */
+    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C57.19,102.66,113,109.19,169.5,109.21c56.5.02,113.11-6.56,169.5-12.77Z" fill="black"></path></svg>');
+    mask-size: 1200px 40px;
+    mask-repeat: repeat-x;
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C57.19,102.66,113,109.19,169.5,109.21c56.5.02,113.11-6.56,169.5-12.77Z" fill="black"></path></svg>');
+    -webkit-mask-size: 1200px 40px;
+    -webkit-mask-repeat: repeat-x;
+}
+
+/* --- 2. ソーシャルアイコンをタイトル(Fusekka)の上に移動 --- */
 .home-info {
-    margin: 100px 0 60px 0 !important;
-    text-align: left; /* 左寄せにしてプロ感を出す */
-    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px !important;
+}
+
+/* 並び替えの指定 */
+.social-icons {
+    order: -1; /* 一番上に配置 */
+    margin-bottom: 20px !important;
+    margin-left: 0 !important;
+    justify-content: flex-start !important;
 }
 
 .home-info h1 {
-    font-size: 4rem !important; /* 特大のタイトル */
-    font-weight: 800 !important;
-    letter-spacing: -2px;
-    margin-bottom: 24px;
+    order: 0;
+    font-size: 4.5rem !important;
+    margin-bottom: 15px !important;
 }
 
 .home-info .p {
-    font-size: 1.25rem !important;
-    color: var(--secondary);
+    order: 1;
 }
 
-/* 記事カード：枠を消して、Dropbox風のミニマルなリストへ */
+.home-info .buttons {
+    order: 2;
+}
+
+/* --- 3. 「最新の投稿」タイトルの追加 --- */
+.main:not(.post-content)::before {
+    content: "最新の投稿";
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin: 60px 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--tertiary);
+    width: fit-content;
+}
+
+/* 記事カードの調整 */
 .entry-card {
-    background: var(--content) !important;
     border: none !important;
-    border-bottom: 1px solid #E5E7EB !important; /* 下線のみ */
-    border-radius: 0 !important;
+    border-bottom: 1px solid #E5E7EB !important;
+    padding: 30px 0 !important;
     box-shadow: none !important;
-    padding: 40px 0 !important; /* 余白をたっぷりとる */
-    margin-bottom: 0 !important;
-    transition: opacity 0.2s ease;
+    border-radius: 0 !important;
 }
 
-.entry-card:hover {
-    opacity: 0.7;
-    background: transparent !important;
-}
-
-/* 記事タイトルを太く、強く */
-.entry-header h2 {
-    font-size: 28px !important;
-    font-weight: 700 !important;
-    color: var(--primary) !important;
-}
-
-/* リンクボタンのカスタマイズ（Dropbox Blue） */
+/* ボタンのデザイン調整 */
 .home-info a {
-    display: inline-block;
-    padding: 12px 24px;
-    margin-top: 20px;
-    margin-right: 10px;
-    background-color: var(--tertiary);
-    color: #ffffff !important;
-    font-weight: 600;
-    border-radius: 4px;
-    text-decoration: none !important;
-    transition: background 0.2s;
-}
-
-.home-info a:hover {
-    background-color: #0055DD;
-}
-
-/* メニューの調整 */
-.nav {
-    border-bottom: 1px solid #E5E7EB;
+    background-color: var(--tertiary) !important;
+    border: none !important;
+    border-radius: 6px !important;
 }
