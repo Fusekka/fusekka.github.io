@@ -1,54 +1,71 @@
-baseURL = 'https://fusekka.com'
+baseURL = 'https://fusekka.com/'
 languageCode = 'ja'
 hasCJKLanguage = true
-title = 'fusekka.com'
+title = 'Fusekka | ネットワーク機器ジャンク再生・修理ログ'
+theme = "github.com/adityatelange/hugo-PaperMod"
 
-# テーマを直接読み込む設定
+# SEO: ロボット用
+enableRobotsTXT = true
+
+# Google Analytics 4 (取得したらIDを入れてください)
+# googleAnalytics = "G-XXXXXXXXXX"
+
 [module]
   [[module.imports]]
     path = "github.com/adityatelange/hugo-PaperMod"
-    theme = "github.com/adityatelange/hugo-PaperMod"
-
-[outputs]
-    home = ["HTML", "RSS", "JSON"] # JSONが必要
-
-[params.homeInfoParams]
-    Title = "fusekkaのブログへようこそ"
-    Content = "朗らかに生きる人間のブログです"
 
 [params]
-    # ダークモードを標準にする（インダストリアルな重厚感のため）
+    # ダークモード固定（あなたのこだわりを維持）
     defaultTheme = "dark"
-    # 右上の月/太陽アイコン（テーマ切り替え）を消して固定したい場合は設定
-    disableThemeToggle = true 
+    disableThemeToggle = true
+    
+    # プロ推奨のSEO・UX設定
+    description = "Cisco, Yamaha, Juniperなどのネットワーク機器ジャンク修理、分解、故障診断の記録。仕入れ額と修理後の販売利益も公開する副業エンジニアブログ。"
+    author = "Fusekka"
+    ShowReadingTime = true    # 読了時間の表示
+    ShowShareButtons = true    # SNSシェアボタン（必須）
+    ShowPostNavLinks = true   # 前後の記事へのリンク
+    ShowBreadCrumbs = true     # パンくずリスト（SEOに極めて重要）
+    ShowCodeCopyButtons = true # コードコピー（エンジニア向け）
 
-    # サイト全体のアクセントカラー（錆びたネジや、警告ラベルのようなオレンジ）
-    # これを指定するとリンクの色などが変わります
-    # (後述のCSSでより細かく設定するので、一旦デフォルトでもOK)
-    # 日本語と英数字、両方の最高フォントを読み込む
-    customFontFace = "Zen+Kaku+Gothic+New:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap"
+    # プロフィールモード（トップをLP風にするなら。今のhomeInfoParamsと排他ですが、こちらが推奨）
+    [params.profileMode]
+        enabled = true
+        title = "Fusekka"
+        subtitle = "ジャンクネットワーク機器を直して学ぶ、稼ぐ。"
+        # static/images/avatar.jpg を用意しましょう
+        imageUrl = "/images/avatar.jpg" 
+        [[params.profileMode.buttons]]
+            name = "修理アーカイブ"
+            url = "/posts"
+        [[params.profileMode.buttons]]
+            name = "使用ツール紹介"
+            url = "/posts/tools" # ツール紹介記事へのリンク
 
+    # ソーシャルアイコン（IT担当としての窓口）
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/あなたのユーザー名"
+    [[params.socialIcons]]
+        name = "x"
+        url = "https://x.com/あなたのユーザー名"
 
-[[menu.main]]
-    identifier = "home"
-    name = "HOME"
-    url = "/"
-    weight = 10
-
+# メニュー（検索、カテゴリ、タグを維持しつつ整理）
 [[menu.main]]
     identifier = "search"
     name = "SEARCH"
     url = "/search/"
-    weight = 20
-
+    weight = 10
 [[menu.main]]
     identifier = "categories"
     name = "CATEGORIES"
     url = "/categories/"
-    weight = 30
-
+    weight = 20
 [[menu.main]]
     identifier = "tags"
     name = "TAGS"
     url = "/tags/"
-    weight = 40
+    weight = 30
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
