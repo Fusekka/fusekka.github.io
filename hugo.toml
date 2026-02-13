@@ -1,4 +1,8 @@
 baseURL = 'https://fusekka.com'
 languageCode = 'ja'
 title = 'fusekka.com'
-theme = 'PaperMod'
+
+# テーマを直接読み込む設定
+[module]
+  [[module.imports]]
+    path = "github.com/adityatelange/hugo-PaperMod"
