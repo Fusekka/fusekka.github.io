@@ -1,49 +1,87 @@
-/* --- Vintage Industrial 視認性向上版 --- */
+/* --- Dropbox Tech Style Theme --- */
 
 :root {
-    /* 背景：少し明るいチャコールグレー（DULTONの工具箱のイメージ） */
-    --theme: #2a2d32 !important; 
-    /* 文字色：視認性の高いシルバーホワイト */
-    --primary: #eceff4 !important;
-    /* サブ文字：くすんだスチールの色 */
-    --secondary: #adb5bd !important;
-    /* 記事カード：背景より少しだけ明るいグレーで段差を表現 */
-    --content: #33383e !important;
-    /* アクセント：インダストリアル・イエロー */
-    --tertiary: #eab308 !important; 
+    /* 背景：最高級の白 */
+    --theme: #ffffff !important;
+    /* メイン文字：Dropbox特有の深い黒に近い色 */
+    --primary: #1E1919 !important;
+    /* サブ文字：洗練されたグレー */
+    --secondary: #637282 !important;
+    /* 記事カード背景 */
+    --content: #ffffff !important;
+    /* アクセント：Dropbox Blue */
+    --tertiary: #0061FF !important;
 }
 
-/* サイト全体：フォントの読みやすさ */
 body {
-    font-family: 'JetBrains Mono', 'Zen Kaku Gothic New', sans-serif !important;
+    font-family: 'Inter', 'Zen Kaku Gothic New', sans-serif !important;
+    background-color: var(--theme) !important;
+    color: var(--primary) !important;
+    line-height: 1.6;
 }
 
-/* トップの挨拶エリアの装飾 */
+/* 挨拶エリアを Dropbox Tech のヒーローセクション風に */
 .home-info {
-    border-left: 8px solid var(--tertiary);
-    padding-left: 20px;
-    margin: 40px 0 !important;
+    margin: 100px 0 60px 0 !important;
+    text-align: left; /* 左寄せにしてプロ感を出す */
+    max-width: 800px;
 }
 
-/* 記事カードのデザイン */
+.home-info h1 {
+    font-size: 4rem !important; /* 特大のタイトル */
+    font-weight: 800 !important;
+    letter-spacing: -2px;
+    margin-bottom: 24px;
+}
+
+.home-info .p {
+    font-size: 1.25rem !important;
+    color: var(--secondary);
+}
+
+/* 記事カード：枠を消して、Dropbox風のミニマルなリストへ */
 .entry-card {
     background: var(--content) !important;
-    border: 1px solid #454c59 !important;
-    box-shadow: 6px 6px 0px #1a1c1e !important; /* 立体的な黒い影 */
-    margin-bottom: 25px !important;
-    padding: 25px !important;
+    border: none !important;
+    border-bottom: 1px solid #E5E7EB !important; /* 下線のみ */
     border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 40px 0 !important; /* 余白をたっぷりとる */
+    margin-bottom: 0 !important;
+    transition: opacity 0.2s ease;
 }
 
-/* タイトルをオレンジにして見やすくする */
+.entry-card:hover {
+    opacity: 0.7;
+    background: transparent !important;
+}
+
+/* 記事タイトルを太く、強く */
 .entry-header h2 {
-    color: var(--tertiary) !important;
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    color: var(--primary) !important;
 }
 
-/* タグのデザイン */
-.post-tags a {
-    background: #3b4252 !important;
-    border: 1px dashed var(--tertiary) !important;
-    color: var(--tertiary) !important;
+/* リンクボタンのカスタマイズ（Dropbox Blue） */
+.home-info a {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    margin-right: 10px;
+    background-color: var(--tertiary);
+    color: #ffffff !important;
+    font-weight: 600;
+    border-radius: 4px;
+    text-decoration: none !important;
+    transition: background 0.2s;
 }
 
+.home-info a:hover {
+    background-color: #0055DD;
+}
+
+/* メニューの調整 */
+.nav {
+    border-bottom: 1px solid #E5E7EB;
+}
