@@ -6,3 +6,7 @@ title = 'fusekka.com'
 [module]
   [[module.imports]]
     path = "github.com/adityatelange/hugo-PaperMod"
+
+[params.homeInfoParams]
+    Title = "fusekka.com へようこそ"
+    Content = "技術で人生を切り拓くログです。"
