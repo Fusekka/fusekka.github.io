@@ -1,85 +1,50 @@
-/* --- Vintage Industrial "Galvanized" Theme --- */
+/* --- Vintage Industrial 修正版 --- */
 
 :root {
-    /* 亜鉛メッキ鋼板の深みのあるグレー */
-    --theme: #1a1c1e;
-    /* 鈍く光るアルミ・シルバー */
-    --primary: #eceff4;
-    /* 錆びや警告灯を連想させるアンバーオレンジ */
-    --tertiary: #d08770; 
-    /* 鉄板の重なりを表現する色 */
-    --content: #2e3440;
-    /* セカンダリテキスト */
-    --secondary: #9ea4b0;
+    --theme: #121212 !important;   /* 背景をより深く（漆黒に近い鉄） */
+    --primary: #ffffff !important; /* メイン文字は純白（読みやすさ最優先） */
+    --secondary: #adb5bd !important; /* サブ文字：明るめのグレー */
+    --tertiary: #ff9f1c !important;  /* アクセント：インダストリアル・オレンジ */
+    --content: #1e1f22 !important;  /* カード：少しだけ浮き上がった鉄板 */
 }
 
-/* サイト全体のフォント設定 */
+/* サイト全体：フォントの視認性を上げる */
 body {
     font-family: 'JetBrains Mono', 'Zen Kaku Gothic New', sans-serif !important;
-    background-color: var(--theme) !important;
-    color: var(--primary) !important;
+    -webkit-font-smoothing: antialiased; /* 文字をくっきりさせる */
 }
 
-/* 記事カード：鉄板をボルトで止めたようなデザイン */
+/* トップページの「ようこそ」部分の強調 */
+.home-info {
+    border-left: 8px solid var(--tertiary); /* 左側に警告カラーの極太ライン */
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.home-info h1 {
+    font-size: 2.5rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -1px;
+}
+
+/* 記事カード：もっと「鉄板」っぽく、立体感を出す */
 .entry-card {
     background: var(--content) !important;
-    border: 1px solid #4c566a !important; /* 金属の継ぎ目 */
-    border-radius: 0px !important; /* 工業製品に丸みはいらない、カッチリさせる */
-    padding: 20px !important;
-    margin-bottom: 30px !important;
-    /* 金属の厚みを表現するハードな影 */
-    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.8) !important;
-    transition: transform 0.1s ease;
-}
-
-.entry-card:hover {
-    transform: translate(2px, 2px);
-    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8) !important;
-    border-color: var(--tertiary) !important;
-}
-
-/* ヘッダーのカスタマイズ：ステンシル風 */
-.first-entry .entry-header h2, .entry-header h2 {
-    font-size: 28px !important;
-    letter-spacing: -0.02em !important;
-    color: var(--primary) !important;
-    border-left: 5px solid var(--tertiary); /* 左側に警告色のバー */
-    padding-left: 15px;
-}
-
-/* リンク：使い込まれた金属のような質感 */
-a {
-    color: var(--tertiary) !important;
-    text-decoration: none !important;
-}
-
-a:hover {
-    text-decoration: underline !important;
-    filter: brightness(1.2);
-}
-
-/* フッター：製造番号風 */
-footer {
-    font-family: 'JetBrains Mono', monospace;
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 2px;
-    opacity: 0.5;
-}
-
-/* タグの見た目を工業用ラベル風にする */
-.post-tags a {
-    background: #3b4252 !important; /* 暗いグレー */
-    border: 1px dashed var(--tertiary) !important; /* オレンジの点線枠 */
-    color: var(--tertiary) !important;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px !important;
-    text-transform: uppercase;
-    padding: 2px 8px !important;
+    border: 1px solid #343a40 !important;
     border-radius: 0 !important;
+    box-shadow: 10px 10px 0px #000000 !important; /* 厚みのある黒い影 */
+    margin-bottom: 25px !important;
+    padding: 25px !important;
 }
 
-.post-tags a:hover {
-    background: var(--tertiary) !important;
-    color: var(--theme) !important;
+/* カードの中のタイトルを大きく、読みやすく */
+.entry-header h2 {
+    font-size: 24px !important;
+    color: var(--tertiary) !important; /* タイトルをオレンジにして視線を誘導 */
+}
+
+/* リンクをマウスオーバーした時の反応を強くする */
+a:hover {
+    background-color: rgba(255, 159, 28, 0.1); /* オレンジの光 */
+    color: var(--tertiary) !important;
 }
