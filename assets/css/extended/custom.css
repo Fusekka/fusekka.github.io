@@ -1,35 +1,68 @@
-/* ガルバナイズド・インダストリアル・カスタム */
+/* --- Vintage Industrial "Galvanized" Theme --- */
+
 :root {
-    /* 背景：亜鉛メッキのような少し青みのあるグレー */
-    --theme: #2e3440;
-    /* メインテキスト：くすんだシルバー */
-    --primary: #d8dee9;
-    /* セカンダリ：暗めのスチール */
-    --secondary: #818896;
-    /* リンク・アクセント：工具の差し色（インダストリアル・イエロー） */
-    --tertiary: #eab308; 
-    /* 背景の別階層 */
-    --content: #3b4252;
-    /* コードブロック：さらに無骨な黒 */
-    --hljs-bg: #1a1b1d;
+    /* 亜鉛メッキ鋼板の深みのあるグレー */
+    --theme: #1a1c1e;
+    /* 鈍く光るアルミ・シルバー */
+    --primary: #eceff4;
+    /* 錆びや警告灯を連想させるアンバーオレンジ */
+    --tertiary: #d08770; 
+    /* 鉄板の重なりを表現する色 */
+    --content: #2e3440;
+    /* セカンダリテキスト */
+    --secondary: #9ea4b0;
 }
 
-/* 記事のカードを少し立体的に（鉄板のように）見せる */
+/* サイト全体のフォント設定 */
+body {
+    font-family: 'JetBrains Mono', 'Zen Kaku Gothic New', sans-serif !important;
+    background-color: var(--theme) !important;
+    color: var(--primary) !important;
+}
+
+/* 記事カード：鉄板をボルトで止めたようなデザイン */
 .entry-card {
-    background: var(--content);
-    border: 1px solid #4c566a; /* ボルトで止めたような境界線 */
-    border-radius: 4px; /* 角は丸めすぎず、少しカッチリ */
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    background: var(--content) !important;
+    border: 1px solid #4c566a !important; /* 金属の継ぎ目 */
+    border-radius: 0px !important; /* 工業製品に丸みはいらない、カッチリさせる */
+    padding: 20px !important;
+    margin-bottom: 30px !important;
+    /* 金属の厚みを表現するハードな影 */
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.8) !important;
+    transition: transform 0.1s ease;
 }
 
-/* タイトルフォントを「機械の型番」っぽくする */
-h1, h2, h3 {
-    font-family: 'JetBrains Mono', 'Consolas', monospace;
-    text-transform: uppercase; /* 大文字にしてプロっぽさを出す */
-    letter-spacing: 1px;
+.entry-card:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8) !important;
+    border-color: var(--tertiary) !important;
 }
 
-/* リンクにホバーした時の色 */
+/* ヘッダーのカスタマイズ：ステンシル風 */
+.first-entry .entry-header h2, .entry-header h2 {
+    font-size: 28px !important;
+    letter-spacing: -0.02em !important;
+    color: var(--primary) !important;
+    border-left: 5px solid var(--tertiary); /* 左側に警告色のバー */
+    padding-left: 15px;
+}
+
+/* リンク：使い込まれた金属のような質感 */
+a {
+    color: var(--tertiary) !important;
+    text-decoration: none !important;
+}
+
 a:hover {
-    color: #88c0d0; /* スチールブルー */
+    text-decoration: underline !important;
+    filter: brightness(1.2);
+}
+
+/* フッター：製造番号風 */
+footer {
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    opacity: 0.5;
 }
