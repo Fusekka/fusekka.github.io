@@ -9,6 +9,9 @@ title = 'fusekka.com'
     path = "github.com/adityatelange/hugo-PaperMod"
     theme = "github.com/adityatelange/hugo-PaperMod"
 
+[outputs]
+    home = ["HTML", "RSS", "JSON"] # JSONが必要
+
 [params.homeInfoParams]
     Title = "fusekkaのブログへようこそ"
     Content = "朗らかに生きる人間のブログです"
