@@ -1,0 +1,4 @@
+baseURL = 'https://fusekka.com'
+languageCode = 'ja'
+title = 'fusekka.com'
+theme = 'PaperMod'
