@@ -22,5 +22,19 @@ title = 'fusekka.com'
     # これを指定するとリンクの色などが変わります
     # (後述のCSSでより細かく設定するので、一旦デフォルトでもOK)
 
+[params]
     # 日本語と英数字、両方の最高フォントを読み込む
     customFontFace = "Zen+Kaku+Gothic+New:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap"
+
+
+[[menu.main]]
+    identifier = "categories"
+    name = "CATEGORIES"
+    url = "/categories/"
+    weight = 10
+
+[[menu.main]]
+    identifier = "tags"
+    name = "TAGS"
+    url = "/tags/"
+    weight = 20
