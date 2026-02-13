@@ -66,3 +66,20 @@ footer {
     letter-spacing: 2px;
     opacity: 0.5;
 }
+
+/* タグの見た目を工業用ラベル風にする */
+.post-tags a {
+    background: #3b4252 !important; /* 暗いグレー */
+    border: 1px dashed var(--tertiary) !important; /* オレンジの点線枠 */
+    color: var(--tertiary) !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px !important;
+    text-transform: uppercase;
+    padding: 2px 8px !important;
+    border-radius: 0 !important;
+}
+
+.post-tags a:hover {
+    background: var(--tertiary) !important;
+    color: var(--theme) !important;
+}
