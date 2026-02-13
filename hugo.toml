@@ -9,6 +9,10 @@ theme = "github.com/adityatelange/hugo-PaperMod"
 
 enableRobotsTXT = true
 
+# HTMLタグ（<br>など）を許可する設定
+[markup.goldmark.renderer]
+  unsafe = true
+  
 [module]
   [[module.imports]]
     path = "github.com/adityatelange/hugo-PaperMod"
