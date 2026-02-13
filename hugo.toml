@@ -27,13 +27,25 @@ title = 'fusekka.com'
 
 
 [[menu.main]]
+    identifier = "home"
+    name = "HOME"
+    url = "/"
+    weight = 10
+
+[[menu.main]]
+    identifier = "search"
+    name = "SEARCH"
+    url = "/search/"
+    weight = 20
+
+[[menu.main]]
     identifier = "categories"
     name = "CATEGORIES"
     url = "/categories/"
-    weight = 10
+    weight = 30
 
 [[menu.main]]
     identifier = "tags"
     name = "TAGS"
     url = "/tags/"
-    weight = 20
+    weight = 40
