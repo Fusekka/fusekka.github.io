@@ -37,6 +37,7 @@ enableRobotsTXT = true
         Title = "Fusekka."
         # Content内にHTMLでボタンを記述します（スタイルはPaperModの色変数を活用）
         Content = """
+<img src="/profile.jpg" width="120" height="120" style="border-radius: 50%; margin: 0 auto 20px auto; display: block;">
 手取り16万の社畜です。ジャンク修理で小銭を稼いでいます。<br>
 このブログを真似するだけで億万長者に！？（なれません）<br><br>
 <div style="display: flex; gap: 10px; justify-content: center;">
