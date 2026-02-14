@@ -9,7 +9,6 @@ theme = "github.com/adityatelange/hugo-PaperMod"
 
 enableRobotsTXT = true
 
-# HTMLタグ（<br>など）を許可し、改行を有効にする
 [markup.goldmark.renderer]
   unsafe = true
 
@@ -24,32 +23,31 @@ enableRobotsTXT = true
     ShowReadingTime = true
     ShowShareButtons = true
     ShowBreadCrumbs = true
-    # サイトの説明文（SEO用）
     description = "手取り16万の社畜がジャンク品を修理して小銭を稼ぐブログ。"
 
     customFontFace = "Inter:wght@400;600;800&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
 
-    # ファビコン設定
     [params.assets]
         favicon = "/favicon.ico"
         favicon16x16 = "/favicon.ico"
         favicon32x32 = "/favicon.ico"
         apple_touch_icon = "/favicon.ico"
 
+
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/Fusekka"
+    [[params.socialIcons]]
+        name = "x"
+        url = "https://x.com/Fusekka"
+
+
     [params.homeInfoParams]
         Title = "Fusekka."
-        # 自己紹介文（画像とボタン付き）
         Content = """
 <img src="/profile.jpg" width="120" height="120" style="border-radius: 50%; margin: 0 auto 20px auto; display: block;">
 手取り16万の社畜です。ジャンク修理で小銭を稼いでいます。<br>
 このブログを真似するだけで億万長者に！？（なれません）<br><br>
-
- [[params.socialIcons]]
-        name = "github"
-        url = "https://github.com/Fusekka"
- [[params.socialIcons]]
-        name = "x"
-        url = "https://x.com/Fusekka"
 
 <div style="display: flex; gap: 10px; justify-content: center;">
     <a href="/posts" style="padding: 8px 16px; background: var(--tertiary); color: var(--primary); border-radius: 8px; text-decoration: none; font-weight: bold; transition: background 0.3s;">
@@ -80,6 +78,5 @@ enableRobotsTXT = true
 [outputs]
     home = ["HTML", "RSS", "JSON"]
 
-# URLから日付を消してSEOに強くする設定
 [permalinks]
     posts = "/:slug/"
