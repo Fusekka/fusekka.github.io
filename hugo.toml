@@ -1,7 +1,7 @@
 baseURL = 'https://fusekka.com/'
 languageCode = 'ja'
 hasCJKLanguage = true
-title = 'ジャンク修理ブログ'
+title = 'ふせっかのジャンク修理ブログ'
 theme = "github.com/adityatelange/hugo-PaperMod"
 
 [pagination]
@@ -28,17 +28,23 @@ enableRobotsTXT = true
     customFontFace = "Inter:wght@400;600;800&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
 
     [params.homeInfoParams]
-        Title = "Fusekka"
+        Title = "Fusekka."
+        # Content内にHTMLでボタンを記述します（スタイルはPaperModの色変数を活用）
         Content = """
 手取り16万の社畜です。ジャンク修理で小銭を稼いでいます。<br>
-このブログを真似するだけで億万長者に！？（なれません）
+このブログを真似するだけで億万長者に！？（なれません）<br><br>
+<div style="display: flex; gap: 10px; justify-content: center;">
+    <a href="/posts" style="padding: 8px 16px; background: var(--tertiary); color: var(--primary); border-radius: 8px; text-decoration: none; font-weight: bold; transition: background 0.3s;">
+        記事を見る
+    </a>
+    <a href="/posts/tools" style="padding: 8px 16px; background: var(--tertiary); color: var(--primary); border-radius: 8px; text-decoration: none; font-weight: bold; transition: background 0.3s;">
+        愛用ツールを見る
+    </a>
+</div>
 """
-        [[params.homeInfoParams.buttons]]
-            name = "記事を見る"
-            url = "/posts"
-        [[params.homeInfoParams.buttons]]
-            name = "愛用ツールを見る"
-            url = "/posts/tools"
+
+    # HomeInfoモードでは以下のbuttons設定は無視されるため削除しました
+    # [[params.homeInfoParams.buttons]] ...
 
     [[params.socialIcons]]
         name = "github"
