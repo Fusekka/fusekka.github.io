@@ -40,32 +40,34 @@
     line-height: 40px !important; 
 }
 
-/* --- 2. プロフィールエリア：隙間の調整 --- */
+/* --- レイアウトの入れ替えと中央揃え --- */
 .home-info {
-    margin-top: -30px !important; /* プラスから「マイナス」に変更して箱ごと上に上げる */
-    overflow: visible !important;  /* これで見切れを物理的に防ぐ */
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
 }
 
-/* 名前とアイコンの調整 */
-.home-info h1 {
-    display: inline-flex !important;
-    align-items: center;
-    justify-content: center;
-    /* 【修正】フォントサイズが少し大きすぎたので微調整（4.5rem -> 3.5rem）*/
-    font-size: 3.5rem !important; 
-    font-weight: 800;
-    margin: 0 !important;
+/* 順番を指定 (1:タイトル, 2:説明文, 3:SNSアイコン, 4:ボタン) */
+.home-info h1 { order: 1 !important; }
+.home-info .p { order: 2 !important; margin-bottom: 10px !important; }
+
+.social-icons { 
+    order: 3 !important; 
+    display: flex !important; 
+    margin: 10px 0 25px 0 !important; /* 上下に余白を作り、ボタンの上に配置 */
 }
 
-.social-icons {
-    display: inline-flex !important;
-    margin-left: 25px !important;
-    margin-top: 15px !important;
+.buttons { 
+    order: 4 !important; 
+    margin-top: 0 !important; 
+    display: flex !important;
+    justify-content: center !important;
 }
 
+/* SNSアイコン自体の色とサイズ微調整 */
 .social-icons a {
-    color: #000000 !important;
-    margin: 0 8px !important;
+    color: #000 !important;
+    margin: 0 10px !important;
 }
 
 /* 説明文 */

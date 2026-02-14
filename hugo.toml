@@ -40,31 +40,26 @@ enableRobotsTXT = true
         favicon32x32 = "/favicon.ico"
         apple_touch_icon = "/favicon.ico"
 
- [params.homeInfoParams]
+[params.homeInfoParams]
         Title = "Fusekka."
         Content = """
-<div style="text-align: center;">
-    <!-- 1. 自己紹介文 -->
-    手取り16万の社畜です。ジャンク修理で小銭を稼いでいます。<br>
-    このブログを真似するだけで億万長者に！？（なれません）<br><br>
-
-    <!-- 2. SNSアイコン -->
-    <div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 25px;">
-        <a href="https://github.com/Fusekka" target="_blank" style="color: #000;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-        </a>
-        <a href="https://x.com/Fusekka" target="_blank" style="color: #000;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
-        </a>
-    </div>
-
-    <!-- 3. ボタン -->
-    <div style="display: flex; gap: 15px; justify-content: center;">
-        <a href="/posts" style="padding: 10px 25px; background-color: var(--industrial-yellow); color: #121212; border-radius: 8px; text-decoration: none; font-weight: 700;">記事を見る</a>
-        <a href="/posts/tools" style="padding: 10px 25px; background-color: var(--vscode-purple); color: #fff; border-radius: 8px; text-decoration: none; font-weight: 700;">愛用ツールを見る</a>
-    </div>
-</div>
+<img src="/profile.jpg" width="220" height="220" style="border-radius: 50%; display: block; margin: 0 auto 20px auto;">
+手取り16万の社畜です。ジャンク修理で小銭を稼いでいます。<br>
+このブログを真似するだけで億万長者に！？（なれません）
 """
+        [[params.homeInfoParams.buttons]]
+            name = "記事を見る"
+            url = "/posts"
+        [[params.homeInfoParams.buttons]]
+            name = "愛用ツールを見る"
+            url = "/posts/tools"
+
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/Fusekka"
+    [[params.socialIcons]]
+        name = "x"
+        url = "https://x.com/Fusekka"
 
 [[menu.main]]
     identifier = "search"
