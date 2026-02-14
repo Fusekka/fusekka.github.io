@@ -1,7 +1,7 @@
 baseURL = 'https://fusekka.com/'
 languageCode = 'ja'
 hasCJKLanguage = true
-title = 'Fusekka | ジャンク修理副業とその他もろもろのブログ'
+title = 'ジャンク修理ブログ'
 theme = "github.com/adityatelange/hugo-PaperMod"
 
 [pagination]
