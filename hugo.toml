@@ -9,7 +9,7 @@ theme = "github.com/adityatelange/hugo-PaperMod"
 
 enableRobotsTXT = true
 
-# HTMLタグ（<br>など）を許可し、改行を有効にする
+# HTMLタグ（<br>など）を許可する
 [markup.goldmark.renderer]
   unsafe = true
 
@@ -18,10 +18,10 @@ enableRobotsTXT = true
     path = "github.com/adityatelange/hugo-PaperMod"
 
 [params]
-    # 【追加】サイト全体の説明文（Google検索結果の下に出る文）
+    # Google検索結果の下に出る文
     description = "手取り16万の社畜がジャンク品を修理して小銭を稼ぐブログ"
-    # 【追加】記事に画像がない時にデフォルトで表示される画像（staticフォルダに入れておく）
-    # シェアされた時にデカデカと出る画像です。1200x630px推奨。
+    # 記事に画像がない時にデフォルトで表示される画像（staticフォルダに入れておく）
+    # シェアされた時にデカデカと出る画像。1200x630px推奨。
     images = ["/profile.jpg"] 
 
 
@@ -41,9 +41,12 @@ enableRobotsTXT = true
         apple_touch_icon = "/favicon.ico"
 
     [params.homeInfoParams]
-        # Content内にHTMLでボタンを記述します（スタイルはPaperModの色変数を活用）
+        # Content内にHTMLでボタンを記述
         Content = """
-<img src="/profile.jpg" width="220" height="220" style="border-radius: 50%; margin: 0 auto 20px auto; display: block;">
+
+# プロフィール画像
+<img src="/profile.jpg" width="220" height="220" style="border-radius: 50%; margin: -50px auto 20px auto; display: block;">
+
 手取り16万の社畜です。ジャンク修理で小銭を稼いでいます。<br>
 このブログを真似するだけで億万長者に！？（なれません）<br><br>
 <div style="display: flex; gap: 10px; justify-content: center;">
