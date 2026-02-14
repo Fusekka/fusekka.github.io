@@ -23,6 +23,10 @@
     z-index: 1000;
 }
 
+.main {
+    padding-top: 0 !important;
+}
+
 /* 【追加】ナビゲーションの最小高さをリセットしてさらにスリムに */
 .nav {
     min-height: auto !important;
@@ -38,12 +42,8 @@
 
 /* --- 2. プロフィールエリア：隙間の調整 --- */
 .home-info {
-    /* 【修正】margin-topを 80px -> 10px にしてヘッダーとの隙間を劇的に狭く */
-    margin-top: 10px !important; 
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: -30px !important; /* プラスから「マイナス」に変更して箱ごと上に上げる */
+    overflow: visible !important;  /* これで見切れを物理的に防ぐ */
 }
 
 /* 名前とアイコンの調整 */
