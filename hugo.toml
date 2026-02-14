@@ -41,7 +41,6 @@ enableRobotsTXT = true
         apple_touch_icon = "/favicon.ico"
 
 [params.homeInfoParams]
-        Title = "Fusekka."
         Content = """
 <img src="/profile.jpg" width="220" height="220" style="border-radius: 50%; display: block; margin: 0 auto 20px auto;">
 手取り16万の社畜です。ジャンク修理で小銭を稼いでいます。<br>
