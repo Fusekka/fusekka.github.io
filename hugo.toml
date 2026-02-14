@@ -9,7 +9,7 @@ theme = "github.com/adityatelange/hugo-PaperMod"
 
 enableRobotsTXT = true
 
-# HTMLタグ（<br>など）を許可する
+# HTMLタグ（<br>など）を許可し、改行を有効にする
 [markup.goldmark.renderer]
   unsafe = true
 
@@ -18,34 +18,31 @@ enableRobotsTXT = true
     path = "github.com/adityatelange/hugo-PaperMod"
 
 [params]
-    # Google検索結果の下に出る文
-    description = "手取り16万の社畜がジャンク品を修理して小銭を稼ぐブログ"
-    # 記事に画像がない時にデフォルトで表示される画像（staticフォルダに入れておく）
-    # シェアされた時にデカデカと出る画像。1200x630px推奨。
-    images = ["/profile.jpg"] 
-
-
     defaultTheme = "light"
     disableThemeToggle = true
     author = "Fusekka"
     ShowReadingTime = true
     ShowShareButtons = true
     ShowBreadCrumbs = true
+    # サイトの説明文（SEO用）
+    description = "手取り16万の社畜がジャンク品を修理して小銭を稼ぐブログ。"
 
     customFontFace = "Inter:wght@400;600;800&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
 
+    # ファビコン設定
     [params.assets]
         favicon = "/favicon.ico"
         favicon16x16 = "/favicon.ico"
         favicon32x32 = "/favicon.ico"
         apple_touch_icon = "/favicon.ico"
 
-[params.homeInfoParams]
+    [params.homeInfoParams]
+        Title = "Fusekka."
+        # 自己紹介文（画像とボタン付き）
         Content = """
-<img src="/profile.jpg" width="220" height="220" style="border-radius: 50%; display: block; margin: 0 auto 20px auto;">
+<img src="/profile.jpg" width="120" height="120" style="border-radius: 50%; margin: 0 auto 20px auto; display: block;">
 手取り16万の社畜です。ジャンク修理で小銭を稼いでいます。<br>
-このブログを真似するだけで億万長者に！？（なれません）
-"""
+このブログを真似するだけで億万長者に！？（なれません）<br><br>
 
     [[params.socialIcons]]
         name = "github"
@@ -54,12 +51,15 @@ enableRobotsTXT = true
         name = "x"
         url = "https://x.com/Fusekka"
 
-        [[params.homeInfoParams.buttons]]
-            name = "記事を見る"
-            url = "/posts"
-        [[params.homeInfoParams.buttons]]
-            name = "愛用ツールを見る"
-            url = "/posts/tools"
+<div style="display: flex; gap: 10px; justify-content: center;">
+    <a href="/posts" style="padding: 8px 16px; background: var(--tertiary); color: var(--primary); border-radius: 8px; text-decoration: none; font-weight: bold; transition: background 0.3s;">
+        記事を見る
+    </a>
+    <a href="/posts/tools" style="padding: 8px 16px; background: var(--tertiary); color: var(--primary); border-radius: 8px; text-decoration: none; font-weight: bold; transition: background 0.3s;">
+        愛用ツールを見る
+    </a>
+</div>
+"""
 
 [[menu.main]]
     identifier = "search"
@@ -78,4 +78,8 @@ enableRobotsTXT = true
     weight = 30
 
 [outputs]
-    home = ["HTML", "RSS", "JSON", "SITEMAP"]
+    home = ["HTML", "RSS", "JSON"]
+
+# URLから日付を消してSEOに強くする設定
+[permalinks]
+    posts = "/:slug/"
