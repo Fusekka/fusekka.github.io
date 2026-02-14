@@ -27,6 +27,12 @@ enableRobotsTXT = true
 
     customFontFace = "Inter:wght@400;600;800&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
 
+    [params.assets]
+        favicon = "/favicon.ico"
+        favicon16x16 = "/favicon.ico"
+        favicon32x32 = "/favicon.ico"
+        apple_touch_icon = "/favicon.ico"
+
     [params.homeInfoParams]
         Title = "Fusekka."
         # Content内にHTMLでボタンを記述します（スタイルはPaperModの色変数を活用）
