@@ -46,12 +46,6 @@ enableRobotsTXT = true
 手取り16万の社畜です。ジャンク修理で小銭を稼いでいます。<br>
 このブログを真似するだけで億万長者に！？（なれません）
 """
-        [[params.homeInfoParams.buttons]]
-            name = "記事を見る"
-            url = "/posts"
-        [[params.homeInfoParams.buttons]]
-            name = "愛用ツールを見る"
-            url = "/posts/tools"
 
     [[params.socialIcons]]
         name = "github"
@@ -59,6 +53,13 @@ enableRobotsTXT = true
     [[params.socialIcons]]
         name = "x"
         url = "https://x.com/Fusekka"
+
+        [[params.homeInfoParams.buttons]]
+            name = "記事を見る"
+            url = "/posts"
+        [[params.homeInfoParams.buttons]]
+            name = "愛用ツールを見る"
+            url = "/posts/tools"
 
 [[menu.main]]
     identifier = "search"
