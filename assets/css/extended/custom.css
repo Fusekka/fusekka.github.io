@@ -44,40 +44,108 @@ body {
 /* ============================================================
    3. Amazon風ブログカードの修正（白背景に黒文字）
    ============================================================ */
-.blog-card {
-    border: 1px solid #e0e0e0 !important;
-    border-radius: 10px !important;
-    overflow: hidden !important;
-    margin: 30px 0 !important;
-    background-color: #ffffff !important; /* 背景は白 */
-    display: block !important;
+.blog-card-container {
+    margin: 2.5rem 0;
+    max-width: 100%;
 }
 
-.blog-card * {
-    color: #1d1d1f !important; /* カード内の全文字を黒にする */
+.blog-card-link {
+    display: flex !important; /* 絶対に横並びにする */
+    align-items: stretch;
+    background: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease-in-out !important;
+    height: 160px; /* PCでの高さを固定して整える */
+}
+
+.blog-card-link:hover {
+    border-color: #33ccff !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+    transform: translateY(-2px);
+}
+
+/* 左側：画像エリア */
+.blog-card-thumb {
+    width: 160px !important; /* 画像の幅を固定 */
+    min-width: 160px;
+    background: #fdfdfd;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #f0f0f0;
+    padding: 10px;
+}
+
+.blog-card-thumb img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    margin: 0 !important;
+}
+
+/* 右側：テキストエリア */
+.blog-card-content {
+    flex: 1;
+    padding: 15px 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    text-align: left !important;
+    overflow: hidden;
 }
 
 .blog-card-title {
-    font-weight: bold !important;
-    font-size: 1.1rem !important;
-    margin-bottom: 5px !important;
-    display: block !important;
+    color: #111827 !important; /* 強制ブラック */
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    margin-bottom: 8px !important;
+    /* 長すぎるタイトルを2行でカット */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
-.blog-card-description {
-    font-size: 0.9rem !important;
-    color: #444 !important;
+.blog-card-desc {
+    color: #4b5563 !important; /* 濃いグレー */
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 8px !important;
+    /* 説明文を2行でカット */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
-.blog-card-url {
-    color: #0066c0 !important; /* URLだけ青 */
+.blog-card-footer {
+    color: #007185 !important; /* Amazon公式に近い青緑 */
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+    text-transform: lowercase;
 }
 
-.blog-card-image img {
-    width: 140px !important;
-    height: 140px !important;
-    object-fit: contain !important;
-    background: #fff !important;
+/* スマホ対応（画面幅が狭い時） */
+@media screen and (max-width: 640px) {
+    .blog-card-link {
+        height: auto; /* スマホでは高さ固定を解除 */
+        flex-direction: row; /* スマホでも横並びを維持、キツければ column に */
+    }
+    .blog-card-thumb {
+        width: 100px !important;
+        min-width: 100px;
+        height: 100px;
+    }
+    .blog-card-title {
+        font-size: 0.95rem !important;
+    }
+    .blog-card-desc {
+        display: none; /* スマホでは説明文を隠してスッキリさせる */
+    }
 }
 
 /* ============================================================

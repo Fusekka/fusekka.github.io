@@ -1,14 +1,12 @@
-<div class="blog-card">
-    <a href="{{ .Get "url" }}" target="_blank" rel="noopener">
+<div class="blog-card-container">
+    <a href="{{ .Get "url" }}" target="_blank" rel="noopener" class="blog-card-link">
+        <div class="blog-card-thumb">
+            <img src="{{ .Get "image" }}" alt="Amazon Product Image">
+        </div>
         <div class="blog-card-content">
-            <div class="blog-card-image">
-                <img src="{{ .Get "image" }}" alt="preview">
-            </div>
-            <div class="blog-card-text">
-                <p class="blog-card-title">{{ .Get "title" }}</p>
-                <p class="blog-card-description">{{ .Get "description" }}</p>
-                <p class="blog-card-url">amazon.co.jp</p>
-            </div>
+            <div class="blog-card-title">{{ .Get "title" }}</div>
+            <div class="blog-card-desc">{{ .Get "description" }}</div>
+            <div class="blog-card-footer">amazon.co.jp</div>
         </div>
     </a>
 </div>
