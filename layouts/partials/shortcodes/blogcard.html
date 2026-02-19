@@ -1,0 +1,14 @@
+<div class="blog-card">
+    <a href="{{ .Get "url" }}" target="_blank" rel="noopener">
+        <div class="blog-card-content">
+            <div class="blog-card-image">
+                <img src="{{ .Get "image" }}" alt="preview">
+            </div>
+            <div class="blog-card-text">
+                <p class="blog-card-title">{{ .Get "title" }}</p>
+                <p class="blog-card-description">{{ .Get "description" }}</p>
+                <p class="blog-card-url">amazon.co.jp</p>
+            </div>
+        </div>
+    </a>
+</div>
