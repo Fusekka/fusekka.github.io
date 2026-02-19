@@ -63,7 +63,7 @@ body {
 
 .blog-card-link:hover {
     border-color: #33ccff !important;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+    box-shadow: 0 10px 25px #179ac5 !important;
     transform: translateY(-2px);
 }
 
