@@ -27,7 +27,12 @@ TocOpen: false
 - **理由**: **「ジョーズフィット」**という加工がされており、ネジにガッチリ食いついて滑りません。
 - **ポイント**: グリップが六角形状で滑りにくく、固着したネジでも驚くほど軽い力で回せます。
 
-👉 [Amazonで価格を見る](https://amzn.to/4cAguuv)
+{{< blogcard 
+    url="https://amzn.to/4cAguuv" 
+    title="ベッセル(VESSEL) メガドラ  No.900" 
+    image="https://m.media-amazon.com/images/I/51G8h9RJLkL._AC_SY300_SX300_QL70_ML2_.jpg" 
+    description="精密ネジをなめずに回せる、ジャンク修理の必須アイテム！" 
+>}}
 
 
 ### 2. ベッセル(VESSEL) 精密ドライバーセット TD-56S
