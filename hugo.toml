@@ -53,9 +53,10 @@ enableRobotsTXT = true
     <a href="/posts" style="padding: 8px 16px; background: var(--tertiary); color: var(--primary); border-radius: 8px; text-decoration: none; font-weight: bold; transition: background 0.3s;">
         記事を見る
     </a>
-    <a href="/posts/tools" style="padding: 8px 16px; background: var(--tertiary); color: var(--primary); border-radius: 8px; text-decoration: none; font-weight: bold; transition: background 0.3s;">
+<!--    <a href="/posts/tools" style="padding: 8px 16px; background: var(--tertiary); color: var(--primary); border-radius: 8px; text-decoration: none; font-weight: bold; transition: background 0.3s;">
         愛用ツールを見る
     </a>
+-->
 </div>
 """
 
