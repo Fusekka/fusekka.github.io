@@ -47,7 +47,7 @@ enableRobotsTXT = true
         Content = """
 <img src="/profile.jpg" width="220" height="220" style="border-radius: 50%; margin: 0 auto 20px auto; display: block;">
 手取り16万の社畜です。ジャンク修理で小銭を稼いでいます。<br>
-このブログを真似するだけで億万長者に！？（なれません）<br>
+このブログを真似するだけで億万長者に！？（なれません）<br><br>
 <span style="color: gray;"><i>当ブログはAmazonのアソシエイトとして適格販売により収入を得ています。</i></span><br><br>
 
 <div style="display: flex; gap: 10px; justify-content: center;">
