@@ -2,7 +2,7 @@
    1. サイト全体の文字色を「黒」に強制固定
    ============================================================ */
 /* サイト全体の基本文字色 */
-html, body, p, li, h1, h2, h3, h4, h5, h6, span, div, blockquote {
+html, body, p, li, h1, h2, h3, h4, h5, h6, blockquote {
     color: #1d1d1f !important; /* 真っ黒に近いグレー */
 }
 
@@ -167,3 +167,4 @@ body {
 .social-icons a {
     color: #000000 !important; /* SNSアイコンも黒 */
 }
+
