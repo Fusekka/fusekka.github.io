@@ -3,11 +3,12 @@ draft: true
 title: "古いノートPCを爆速化！HDDからSSDへの換装手順と必要なもの"
 description: "動作が遅いジャンクPCも、HDDをSSDに交換するだけで最新機種並みに爆速化します。初心者でも失敗しないクローン手順や必要なパーツ、工具を分かりやすく解説。"
 date: 2026-02-20
-categories:
-tags:
+categories: ["コラム"]
+tags: ["ジャンク修理", "初心者向け", "ジャンクPC"]
 showToc: true
 TocOpen: false
 ---
+
 
 ## 古いノートPCの動作が遅い原因は「HDD」かも？
 
