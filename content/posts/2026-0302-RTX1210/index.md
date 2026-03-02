@@ -8,3 +8,8 @@ tags: ["ジャンク修理", "副業"]
 showToc: true
 TocOpen: false
 ---
+
+
+
+電源入る？ 入らない？
+
