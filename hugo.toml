@@ -62,9 +62,9 @@ enableRobotsTXT = true
 """
 
 [[menu.main]]
-    identifier = "posts"
+    identifier = "archives"
     name = "記事一覧"
-    url = "/posts/"
+    url = "/archives/"
     weight = 5
 [[menu.main]]
     identifier = "search"
