@@ -29,11 +29,14 @@ body {
    ============================================================ */
 .header {
     background: #000000 !important;
-    padding: 5px 0 !important; 
+    padding: 2px 0 !important; /* 上下の無駄な余白をギリギリまで削る */
     border-bottom: 2px solid var(--tertiary) !important;
-    position: sticky !important;
-    top: 0;
-    z-index: 1000;
+    position: static !important; /* ★ stickyからstaticに変更！これでスクロールしたら上に消えます */
+}
+
+/* ヘッダー内の文字（ロゴやメニュー）は白 */
+.header *, .nav a, .logo a, #menu a {
+    color: #ffffff !important;
 }
 
 /* ヘッダー内の文字（ロゴやメニュー）は白 */
@@ -169,34 +172,43 @@ body {
 }
 
 /* ============================================================
-   5. スマホ専用の表示崩れ防止（画面幅768px以下） ★追加！
+   5. スマホ専用の表示崩れ防止（画面幅768px以下）
    ============================================================ */
 @media screen and (max-width: 768px) {
-    /* ① ブログ名が途中で「グ」だけ改行されるのを防ぐ */
-    .logo a {
-        font-size: 1.15rem !important; /* 1行に収まるサイズに縮小 */
-        white-space: nowrap !important; /* 改行を禁止 */
+    /* ヘッダー全体の厚みをスリム化 */
+    .header {
+        padding: 4px 0 !important;
+    }
+    .nav {
+        padding: 0 10px !important;
+        min-height: auto !important;
     }
 
-    /* ② ヘッダーメニューが画面端で切れないように文字サイズと隙間を調整 */
+    /* ① ブログ名 */
+    .logo a {
+        font-size: 1.05rem !important; /* 少しスリムにして1行に */
+        white-space: nowrap !important;
+        line-height: 1.2 !important;
+    }
+
+    /* ② ヘッダーメニュー（文字サイズと隙間を詰めてスッキリ収める） */
     #menu {
-        gap: 8px !important;
-        margin-top: 4px !important;
+        gap: 6px !important;
+        margin-top: 2px !important;
     }
     #menu a {
-        font-size: 0.82rem !important; /* 5つのメニューが横並びで収まるように */
-        padding: 2px 4px !important;
+        font-size: 0.78rem !important; /* 5つのメニューが綺麗に1行に並ぶサイズ */
+        padding: 2px 3px !important;
     }
 
-    /* ③ 画面を圧迫していた巨大な記事タイトルを読みやすいサイズに */
+    /* ③ 記事タイトル */
     .post-title {
-        font-size: 1.35rem !important; /* ちょうど良い大きさに縮小 */
+        font-size: 1.35rem !important;
         line-height: 1.4 !important;
         margin-top: 10px !important;
         margin-bottom: 12px !important;
     }
 
-    /* パンくずリスト（ホーム > Posts >）の余白をスッキリ */
     .breadcrumbs {
         font-size: 0.8rem !important;
         margin-bottom: 5px !important;
