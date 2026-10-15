@@ -62,6 +62,11 @@ enableRobotsTXT = true
 """
 
 [[menu.main]]
+    identifier = "posts"
+    name = "記事一覧"
+    url = "/posts/"
+    weight = 5
+[[menu.main]]
     identifier = "search"
     name = "記事検索"
     url = "/search/"
