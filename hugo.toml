@@ -23,7 +23,7 @@ enableRobotsTXT = true
     ShowReadingTime = true
     ShowShareButtons = true
     ShowBreadCrumbs = true
-    description = "手取り16万の社畜がジャンク品を修理して小銭を稼ぐブログ。"
+    description = "世界中のジャンク修理・魔改造DIYを眺めるのが好きな逸般人のブログ。海外掲示板などで見つけたヤバい修理事例や、クスッと笑えるDIYハックを日本語でまとめています。"
 
     customFontFace = "Inter:wght@400;600;800&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
 
@@ -46,8 +46,8 @@ enableRobotsTXT = true
         # 自己紹介文（画像とボタン付き）
         Content = """
 <img src="/profile.jpg" width="220" height="220" style="border-radius: 50%; margin: 0 auto 20px auto; display: block;">
-手取り16万の社畜です。ジャンク修理で小銭を稼いでいます。<br>
-このブログを真似するだけで億万長者に！？（なれません）<br><br>
+世界中のジャンク修理・魔改造DIYを眺めるのが好きな逸般人のブログ。<br>
+海外掲示板などで見つけたヤバい修理事例や、クスッと笑えるDIYハックを日本語でまとめています。<br><br>
 <span style="color: gray;"><i>当ブログはAmazonのアソシエイトとして適格販売により収入を得ています。</i></span><br><br>
 
 <div style="display: flex; gap: 10px; justify-content: center;">
