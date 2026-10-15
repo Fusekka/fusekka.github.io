@@ -122,10 +122,9 @@ DIYや魔改造はハードウェアの仕組みを理解し、安全マージ�
 
 **引用元・元スレッド：** [Chargeur d'artisan - Reddit](https://www.reddit.com/r/techsupportmacgyver/comments/1x5xqeq/chargeur_dartisan/)
 
-<!-- 【アフィリエイト挿入枠】
+
 ---
 ### 🛠️ 今回の魔改造・修理におすすめのアイテム
 
-{{< blogcard url="★ここにAmazonアソシエイトURLを貼る★" title="マルチバッテリーバランサー充放電器（IMAX B6互換モデル）" image="★ここに商品画像URLを貼る★" description="LiPo、Li-ion、Ni-MHなど多彩なバッテリーに対応し、過充電保護や温度監視機能を備えた電子工作・ジャンク修理勢の必需品。直結充電で火を吹く前に、安全な専用チャージャーを1台備えておきましょう。" >}}
+{{< blogcard url="https://link.amazon/B01vJveIF" title="Anker Nano II 65W 充電器 USB-C PD" image="!https://m.media-amazon.com/images/I/51p3xiAi7KL._AC_SL1500_.jpg" description="幅広い機器に急速充電可能: USB PowerDelivery (PD) 対応の65W出力で、スマートフォンからノートPCまで幅広い機器に急速充電できるUSB充電器です。利用機器毎に異なる充電器を持ち運ぶ必要はありません。" >}}
 ---
--->

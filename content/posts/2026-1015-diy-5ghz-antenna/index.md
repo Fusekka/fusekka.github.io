@@ -131,10 +131,9 @@ DIY精神あふれる海外ニキたちのパッションには毎度驚かさ�
 ---
 **引用元・元スレッド：** [I made a 5ghz antenna - Reddit](https://www.reddit.com/r/techsupportmacgyver/comments/1x5w75m/i_made_a_5ghz_antenna/)
 
-<!-- 【アフィリエイト挿入枠】
+
 ---
 ### 🛠️ 今回の魔改造・修理におすすめのアイテム
 
-{{< blogcard url="★ここにAmazonアソシエイトURLを貼る★" title="デュアルバンド対応 高利得Wi-Fiアンテナ 2本セット（RP-SMAコネクタ）" image="★ここに商品画像URLを貼る★" description="針金で自作してマザーボードを焼き切る前に！2.4GHz/5GHz両対応、ルーターやPCのWi-Fiカードにそのまま刺さる定番の交換用高利得アンテナ。数百円で買える圧倒的安心感を手に入れよう。" >}}
+{{< blogcard url="https://link.amazon/B0aiEuxCW" title="バッファロー Wi-Fi 6 ルーター WSR-3000AX4L/N" image="https://m.media-amazon.com/images/I/81yIzr1RUpL._AC_SL1500_.jpg" description="一人暮らしはもちろん、家族での利用にもおすすめなWi-Fi 6対応ルーターです。大容量データをまとめて転送できるワイドバンド160MHzに対応しているので、ネットや動画を快適に楽しめます。" >}}
 ---
--->

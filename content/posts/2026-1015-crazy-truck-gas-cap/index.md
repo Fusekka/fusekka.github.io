@@ -112,10 +112,10 @@ Redditのスレッドでは、この狂気の給油口を目撃した海外ニ�
 ---
 **引用元・元スレッド：** [New to me truck has no gas cap - Reddit](https://www.reddit.com/r/techsupportmacgyver/comments/1x6bnul/new_to_me_truck_has_no_gas_cap/)
 
-<!-- 【アフィリエイト挿入枠】
+
 ---
 ### 🛠️ 今回の魔改造・修理におすすめのアイテム
 
-{{< blogcard url="★ここにAmazonアソシエイトURLを貼る★" title="エーモン(amon) 燃料キャップ・給油口セーフティツール & 汎用フューエルキャップ" image="★ここに商品画像URLを貼る★" description="「キャップを失くしたから配管部品をねじ込む」前に！数百円〜千円台で買える汎用ガスキャップや、給油時の静電気除去アイテムで安全確実なジャンクカー再生を。" >}}
+{{< blogcard url="https://link.amazon/B0hyMtYhp" title="シュアラスター ループ パワーショット 240ml ガソリン添加剤" image="https://m.media-amazon.com/images/I/61oFeFzVDjL._AC_SL1500_.jpg" description="給油時に入れるだけで、燃焼室・インジェクター・吸気バルブに付着した汚れを除去。燃費悪化やアイドリング不調の原因となる汚れを除去し、エンジンコンディションを改善させます。
+ピストンの動きをスムーズにすることによりアクセルレスポンス向上、加速感・パワー向上・燃費改善 が期待できます。" >}}
 ---
--->

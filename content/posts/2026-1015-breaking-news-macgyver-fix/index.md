@@ -126,10 +126,9 @@ TocOpen: true
 ---
 **引用元・元スレッド：** [BREAKING NEWS - Reddit](https://www.reddit.com/r/techsupportmacgyver/comments/1x1jmr3/breaking_news/)
 
-<!-- 【アフィリエイト挿入枠】
+
 ---
 ### 🛠️ 今回の魔改造・修理におすすめのアイテム
 
-{{< blogcard url="★ここにAmazonアソシエイトURLを貼る★" title="3M 高耐熱ポリイミドテープ（カプトンテープ） 10mm×33m" image="★ここに商品画像URLを貼る★" description="基板魔改造やジャンク修理の必需品！高い絶縁性と耐熱性を誇り、剥き出し配線のショート防止やフレキ固定にプロも愛用する定番耐熱テープです。" >}}
+{{< blogcard url="https://link.amazon/B0bp4xtw3" title="ソニー ワイヤレスヘッドホン WH-CH520" image="https://m.media-amazon.com/images/I/51sRM0oCmWL._AC_SL1100_.jpg" description="高音から低音までバランスが良く、ボーカルや楽器が自然でクリアな音を楽しめるワイヤレスヘッドホン。やはりワイヤレスは楽です。" >}}
 ---
--->

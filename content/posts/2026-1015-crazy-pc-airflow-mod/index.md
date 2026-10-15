@@ -134,10 +134,9 @@ PCケース本来の美しいサイドパネルやスマートなフォルムは
 
 **引用元・元スレッド：** [Nice airflow, nah? - Reddit](https://www.reddit.com/r/techsupportmacgyver/comments/1x4yzb2/nice_airflow_nah/)
 
-<!-- 【アフィリエイト挿入枠】
+
 ---
 ### 🛠️ 今回の魔改造・修理におすすめのアイテム
 
-{{< blogcard url="https://www.amazon.co.jp/dp/B004X2XG5W" title="長尾製作所 ファン用スリット付スロットカバー 120mmファン固定可能" image="https://m.media-amazon.com/images/I/61tG6uJ7g2L._AC_SL1000_.jpg" description="結束バンドやガムテープで無理やり固定する前に！拡張スロット（PCIスロット）を利用して、グラフィックボードの真下に120mm冷却ファンを安全かつスマートに増設できる自作er定番の冷却強化ブラケットです。" >}}
+{{< blogcard url="https://link.amazon/B043s4su5" title="Amazonベーシック ノートパソコン冷却パッド スタンド" image="https://m.media-amazon.com/images/I/813FGSE+V8L._AC_SL1500_.jpg" description="ノートパソコンの冷却に最適な静音冷却パッドです。回転速度を自由に調整可能な冷却ファンを6つ搭載。オーバーヒートを防ぎパソコンの寿命を延ばします。" >}}
 ---
--->
