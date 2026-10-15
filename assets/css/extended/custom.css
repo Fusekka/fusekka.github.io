@@ -1,9 +1,15 @@
 /* ============================================================
-   1. サイト全体の文字色を「黒」に強制固定
+   1. サイト全体の文字色を「黒」に強制固定 ＆ 隙間ゼロ化
    ============================================================ */
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #ffffff !important;
+}
+
 /* サイト全体の基本文字色 */
 html, body, p, li, h1, h2, h3, h4, h5, h6, blockquote {
-    color: #1d1d1f !important; /* 真っ黒に近いグレー */
+    color: #1d1d1f !important;
 }
 
 /* 記事本文とタイトルの強制色指定 */
@@ -11,7 +17,7 @@ html, body, p, li, h1, h2, h3, h4, h5, h6, blockquote {
     color: #1d1d1f !important;
 }
 
-/* 背景色を白に固定 */
+/* 背景色設定 */
 :root {
     --theme: #ffffff !important;
     --content: #ffffff !important;
@@ -20,23 +26,17 @@ html, body, p, li, h1, h2, h3, h4, h5, h6, blockquote {
     --vscode-purple: #6a40ed !important;
 }
 
-body {
-    background-color: #ffffff !important;
-}
-
 /* ============================================================
-   2. ヘッダーだけは背景が黒なので、文字を「白」にする
+   2. ヘッダー（★PCでは常に上部に固定）
    ============================================================ */
 .header {
     background: #000000 !important;
-    padding: 2px 0 !important; /* 上下の無駄な余白をギリギリまで削る */
+    padding: 6px 0 !important; 
     border-bottom: 2px solid var(--tertiary) !important;
-    position: static !important; /* ★ stickyからstaticに変更！これでスクロールしたら上に消えます */
-}
-
-/* ヘッダー内の文字（ロゴやメニュー）は白 */
-.header *, .nav a, .logo a, #menu a {
-    color: #ffffff !important;
+    position: sticky !important; /* PCでは固定！スクロールしても付いてくる */
+    top: 0 !important;
+    margin-top: 0 !important;
+    z-index: 1000;
 }
 
 /* ヘッダー内の文字（ロゴやメニュー）は白 */
@@ -53,7 +53,7 @@ body {
 }
 
 .blog-card-link {
-    display: flex !important; /* 絶対に横並びにする */
+    display: flex !important;
     align-items: stretch;
     background: #ffffff !important;
     border: 1px solid #e5e7eb !important;
@@ -61,7 +61,7 @@ body {
     overflow: hidden !important;
     text-decoration: none !important;
     transition: all 0.2s ease-in-out !important;
-    height: 160px; /* PCでの高さを固定して整える */
+    height: 160px;
 }
 
 .blog-card-link:hover {
@@ -70,9 +70,8 @@ body {
     transform: translateY(-2px);
 }
 
-/* 左側：画像エリア */
 .blog-card-thumb {
-    width: 160px !important; /* 画像の幅を固定 */
+    width: 160px !important;
     min-width: 160px;
     background: #fdfdfd;
     display: flex !important;
@@ -89,7 +88,6 @@ body {
     margin: 0 !important;
 }
 
-/* 右側：テキストエリア */
 .blog-card-content {
     flex: 1;
     padding: 15px 20px !important;
@@ -101,12 +99,11 @@ body {
 }
 
 .blog-card-title {
-    color: #111827 !important; /* 強制ブラック */
+    color: #111827 !important;
     font-size: 1.05rem !important;
     font-weight: 700 !important;
     line-height: 1.4 !important;
     margin-bottom: 8px !important;
-    /* 長すぎるタイトルを2行でカット */
     display: -webkit-box;
     -webkit-line-clamp: 2;
     line-clamp: 2;
@@ -115,11 +112,10 @@ body {
 }
 
 .blog-card-desc {
-    color: #4b5563 !important; /* 濃いグレー */
+    color: #4b5563 !important;
     font-size: 0.85rem !important;
     line-height: 1.5 !important;
     margin-bottom: 8px !important;
-    /* 説明文を2行でカット */
     display: -webkit-box;
     -webkit-line-clamp: 2;
     line-clamp: 2;
@@ -128,13 +124,12 @@ body {
 }
 
 .blog-card-footer {
-    color: #007185 !important; /* Amazon公式に近い青緑 */
+    color: #007185 !important;
     font-size: 0.75rem !important;
     font-weight: 600 !important;
     text-transform: lowercase;
 }
 
-/* スマホ対応（画面幅が狭い時）のブログカード */
 @media screen and (max-width: 640px) {
     .blog-card-link {
         height: auto;
@@ -172,36 +167,36 @@ body {
 }
 
 /* ============================================================
-   5. スマホ専用の表示崩れ防止（画面幅768px以下）
+   5. スマホ専用の表示崩れ防止（★スマホだけスクロールで消す）
    ============================================================ */
 @media screen and (max-width: 768px) {
-    /* ヘッダー全体の厚みをスリム化 */
+    /* スマホでは固定を解除！隙間なく密着させてスクロールで消えるようにする */
     .header {
+        position: relative !important; /* 固定を解除して流れるようにする */
+        top: 0 !important;
         padding: 4px 0 !important;
     }
+    
     .nav {
-        padding: 0 10px !important;
+        padding: 0 8px !important;
         min-height: auto !important;
     }
 
-    /* ① ブログ名 */
     .logo a {
-        font-size: 1.05rem !important; /* 少しスリムにして1行に */
+        font-size: 1.05rem !important;
         white-space: nowrap !important;
         line-height: 1.2 !important;
     }
 
-    /* ② ヘッダーメニュー（文字サイズと隙間を詰めてスッキリ収める） */
     #menu {
-        gap: 6px !important;
+        gap: 5px !important;
         margin-top: 2px !important;
     }
     #menu a {
-        font-size: 0.78rem !important; /* 5つのメニューが綺麗に1行に並ぶサイズ */
-        padding: 2px 3px !important;
+        font-size: 0.75rem !important;
+        padding: 2px 2px !important;
     }
 
-    /* ③ 記事タイトル */
     .post-title {
         font-size: 1.35rem !important;
         line-height: 1.4 !important;
@@ -218,24 +213,20 @@ body {
 /* ============================================================
    6. 記事本文の読みやすさ調整（行間・段落の隙間）
    ============================================================ */
-/* 記事本文全体の行間をゆったり広げる */
 .post-content {
-    line-height: 1.9 !important;      /* 初期値（約1.6）から広げて読みやすく */
-    letter-spacing: 0.03em !important; /* 文字と文字の隙間もほんの少し広げる */
+    line-height: 1.9 !important;
+    letter-spacing: 0.03em !important;
 }
 
-/* 段落（Enterを押した改行）ごとの隙間をしっかり空ける */
 .post-content p {
-    margin-bottom: 1.8rem !important; /* 次の文章との間にしっかり余白を取る */
+    margin-bottom: 1.8rem !important;
 }
 
-/* 箇条書き（リスト）の隙間と行間 */
 .post-content li {
     margin-bottom: 0.6rem !important;
     line-height: 1.8 !important;
 }
 
-/* 見出し（H2・H3）の上下にもしっかり余白を取る */
 .post-content h2 {
     margin-top: 3rem !important;
     margin-bottom: 1.2rem !important;
