@@ -34,9 +34,7 @@ enableRobotsTXT = true
         apple_touch_icon = "/favicon.ico"
 
 
-    [[params.socialIcons]]
-        name = "github"
-        url = "https://github.com/Fusekka"
+    
     [[params.socialIcons]]
         name = "x"
         url = "https://x.com/Fusekka"
