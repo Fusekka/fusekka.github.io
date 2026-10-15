@@ -202,3 +202,36 @@ body {
         margin-bottom: 5px !important;
     }
 }
+
+/* ============================================================
+   6. 記事本文の読みやすさ調整（行間・段落の隙間）
+   ============================================================ */
+/* 記事本文全体の行間をゆったり広げる */
+.post-content {
+    line-height: 1.9 !important;      /* 初期値（約1.6）から広げて読みやすく */
+    letter-spacing: 0.03em !important; /* 文字と文字の隙間もほんの少し広げる */
+}
+
+/* 段落（Enterを押した改行）ごとの隙間をしっかり空ける */
+.post-content p {
+    margin-bottom: 1.8rem !important; /* 次の文章との間にしっかり余白を取る */
+}
+
+/* 箇条書き（リスト）の隙間と行間 */
+.post-content li {
+    margin-bottom: 0.6rem !important;
+    line-height: 1.8 !important;
+}
+
+/* 見出し（H2・H3）の上下にもしっかり余白を取る */
+.post-content h2 {
+    margin-top: 3rem !important;
+    margin-bottom: 1.2rem !important;
+    line-height: 1.4 !important;
+}
+
+.post-content h3 {
+    margin-top: 2.2rem !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.4 !important;
+}
