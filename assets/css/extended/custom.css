@@ -27,21 +27,21 @@ html, body, p, li, h1, h2, h3, h4, h5, h6, blockquote {
 }
 
 /* ============================================================
-   2. ヘッダー（★PCでは常に上部に固定）
+   2. ヘッダー（最上部に密着 ＆ スマホのステータスバーまで黒化）
    ============================================================ */
-.header {
-    background: #000000 !important;
-    padding: 6px 0 !important; 
-    border-bottom: 2px solid var(--tertiary) !important;
-    position: sticky !important; /* PCでは固定！スクロールしても付いてくる */
-    top: 0 !important;
-    margin-top: 0 !important;
-    z-index: 1000;
+html {
+    background-color: #000000 !important; /* 最上部の余白を黒に */
 }
 
-/* ヘッダー内の文字（ロゴやメニュー）は白 */
-.header *, .nav a, .logo a, #menu a {
-    color: #ffffff !important;
+.header {
+    background: #000000 !important;
+    /* iPhoneのノッチ・時計部分の隙間まで黒で埋める指定 */
+    padding-top: calc(env(safe-area-inset-top) + 4px) !important;
+    padding-bottom: 4px !important;
+    border-bottom: 2px solid var(--tertiary) !important;
+    position: relative !important;
+    top: 0 !important;
+    margin-top: 0 !important;
 }
 
 /* ============================================================
