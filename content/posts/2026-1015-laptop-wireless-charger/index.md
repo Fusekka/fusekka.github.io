@@ -68,10 +68,9 @@ TocOpen: false
 
 **引用元・元スレッド：** [Making my laptop wireless charger for my phone - Reddit](https://www.reddit.com/r/techsupportmacgyver/comments/1x1d351/making_my_laptop_wireless_charger_for_my_phone/)
 
-<!-- 【アフィリエイト挿入枠】
+
 ---
 ### 🛠️ 今回の魔改造・修理におすすめのアイテム
 
-{{< blogcard url="★ここにAmazonアソシエイトURLを貼る★" title="Anker PowerWave 10 Stand (ワイヤレス充電器)" image="★ここに商品画像URLを貼る★" description="ノートPCを改造して火を吹かせる前に！デスクの横に置くだけで安全・快適にスマホを急速充電できる定番Qiスタンドです。" >}}
+{{< blogcard url="https://link.amazon/B0eql5uBU" title="Anker PowerWave 10 Stand (ワイヤレス充電器)" image="https://m.media-amazon.com/images/I/510K3zqAUQL._AC_SL1500_.jpg" description="ノートPCを改造して火を吹かせる前に！デスクの横に置くだけで安全・快適にスマホを急速充電できる定番Qiスタンドです。" >}}
 ---
--->
