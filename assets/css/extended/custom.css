@@ -1,23 +1,23 @@
 /* ============================================================
-   1. サイト全体の文字色を「黒」に強制固定 ＆ 隙間ゼロ化
+   1. サイト全体の文字色と背景
    ============================================================ */
-html, body {
+html {
+    background-color: #000000 !important; /* 最上部の余白を黒に */
+}
+
+body {
     margin: 0 !important;
     padding: 0 !important;
     background-color: #ffffff !important;
-}
-
-/* サイト全体の基本文字色 */
-html, body, p, li, h1, h2, h3, h4, h5, h6, blockquote {
     color: #1d1d1f !important;
 }
 
-/* 記事本文とタイトルの強制色指定 */
-.post-title, .post-content, .entry-header, .entry-content, .entry-header h2 {
+/* 記事本文とタイトルの文字色（黒） */
+.post-title, .post-content, .entry-header, .entry-content, .entry-header h2,
+p, li, h1, h2, h3, h4, h5, h6, blockquote {
     color: #1d1d1f !important;
 }
 
-/* 背景色設定 */
 :root {
     --theme: #ffffff !important;
     --content: #ffffff !important;
@@ -27,21 +27,23 @@ html, body, p, li, h1, h2, h3, h4, h5, h6, blockquote {
 }
 
 /* ============================================================
-   2. ヘッダー（最上部に密着 ＆ スマホのステータスバーまで黒化）
+   2. ヘッダー（黒背景 ＆ ★文字は絶対に白★）
    ============================================================ */
-html {
-    background-color: #000000 !important; /* 最上部の余白を黒に */
-}
-
 .header {
     background: #000000 !important;
-    /* iPhoneのノッチ・時計部分の隙間まで黒で埋める指定 */
     padding-top: calc(env(safe-area-inset-top) + 4px) !important;
     padding-bottom: 4px !important;
     border-bottom: 2px solid var(--tertiary) !important;
-    position: relative !important;
+    position: sticky !important; /* PCでは上部に固定 */
     top: 0 !important;
     margin-top: 0 !important;
+    z-index: 1000;
+}
+
+/* ★ヘッダー内のすべての文字・ロゴ・メニューを完全に「白」にする★ */
+.header, .header *, .header a, .nav, .nav *, .nav a, .logo a, #menu a, #menu span {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
 }
 
 /* ============================================================
@@ -167,14 +169,14 @@ html {
 }
 
 /* ============================================================
-   5. スマホ専用の表示崩れ防止（★スマホだけスクロールで消す）
+   5. スマホ専用の表示崩れ防止（画面幅768px以下）
    ============================================================ */
 @media screen and (max-width: 768px) {
-    /* スマホでは固定を解除！隙間なく密着させてスクロールで消えるようにする */
     .header {
-        position: relative !important; /* 固定を解除して流れるようにする */
+        position: relative !important; /* スマホではスクロールで消える */
         top: 0 !important;
-        padding: 4px 0 !important;
+        padding-top: calc(env(safe-area-inset-top) + 4px) !important;
+        padding-bottom: 4px !important;
     }
     
     .nav {
