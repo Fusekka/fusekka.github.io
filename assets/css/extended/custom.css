@@ -169,33 +169,37 @@ p, li, h1, h2, h3, h4, h5, h6, blockquote {
 }
 
 /* ============================================================
-   5. スマホ専用の表示崩れ防止（画面幅768px以下）
+   5. スマホ専用の表示崩れ防止（★スマホだけ上の余白を少し広げて調整）
    ============================================================ */
 @media screen and (max-width: 768px) {
     .header {
         position: relative !important; /* スマホではスクロールで消える */
         top: 0 !important;
-        padding-top: calc(env(safe-area-inset-top) + 4px) !important;
-        padding-bottom: 4px !important;
+        /* ↓ 上の黒い余白を「+4px」から「+12px」に広げてゆったりさせました！ */
+        padding-top: calc(env(safe-area-inset-top) + 12px) !important;
+        padding-bottom: 8px !important;
     }
     
     .nav {
-        padding: 0 8px !important;
+        padding: 0 12px !important;
         min-height: auto !important;
     }
 
     .logo a {
         font-size: 1.05rem !important;
         white-space: nowrap !important;
-        line-height: 1.2 !important;
+        line-height: 1.4 !important;
+        /* ブログ名の上下にも少しだけ品の良い余白を追加 */
+        display: inline-block !important;
+        margin-bottom: 4px !important;
     }
 
     #menu {
-        gap: 5px !important;
-        margin-top: 2px !important;
+        gap: 6px !important;
+        margin-top: 4px !important;
     }
     #menu a {
-        font-size: 0.75rem !important;
+        font-size: 0.76rem !important;
         padding: 2px 2px !important;
     }
 
@@ -211,6 +215,7 @@ p, li, h1, h2, h3, h4, h5, h6, blockquote {
         margin-bottom: 5px !important;
     }
 }
+
 
 /* ============================================================
    6. 記事本文の読みやすさ調整（行間・段落の隙間）
