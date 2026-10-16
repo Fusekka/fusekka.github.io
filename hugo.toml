@@ -25,6 +25,9 @@ enableRobotsTXT = true
     ShowBreadCrumbs = true
     description = "世界中のジャンク修理・魔改造DIYを眺めるのが好きな逸般人のブログ。海外掲示板などで見つけたヤバい修理事例や、クスッと笑えるDIYハックを日本語でまとめています。"
 
+    # フッターの一番下にプライバシーポリシーのリンクを設置（AdSense審査対策）
+    copyright = '© 2026 ふせっかのジャンク修理ブログ · <a href="/privacy/" style="color: gray; text-decoration: underline;">プライバシーポリシー・免責事項</a>'
+
     customFontFace = "Inter:wght@400;600;800&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
 
     [params.assets]
@@ -33,12 +36,9 @@ enableRobotsTXT = true
         favicon32x32 = "/favicon.ico"
         apple_touch_icon = "/favicon.ico"
 
-
-    
     [[params.socialIcons]]
         name = "x"
         url = "https://x.com/Fusekka"
-
 
     [params.homeInfoParams]
         # 自己紹介文（画像とボタン付き）
@@ -52,10 +52,6 @@ enableRobotsTXT = true
     <a href="/posts" style="padding: 8px 16px; background: var(--tertiary); color: var(--primary); border-radius: 8px; text-decoration: none; font-weight: bold; transition: background 0.3s;">
         記事を見る
     </a>
-<!--    <a href="/posts/tools" style="padding: 8px 16px; background: var(--tertiary); color: var(--primary); border-radius: 8px; text-decoration: none; font-weight: bold; transition: background 0.3s;">
-        愛用ツールを見る
-    </a>
--->
 </div>
 """
 
