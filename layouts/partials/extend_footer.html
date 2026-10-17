@@ -1,11 +1,28 @@
-<!-- 画面に実際に表示される枠（PC専用） -->
+<!-- ============================================================
+     1. スマホ専用：画面下部フロート広告枠
+     ============================================================ -->
+<div class="mobile-bottom-ad" id="mobileAdBox">
+    <div class="mobile-ad-inner">
+        <span class="mobile-ad-close" onclick="document.getElementById('mobileAdBox').style.display='none'">✕</span>
+        <!-- ここにスマホ用の細長バナーが入ります -->
+        <div class="mobile-ad-target"></div>
+    </div>
+</div>
+
+<!-- ============================================================
+     2. PC専用：左右の追従広告枠
+     ============================================================ -->
 <div class="side-ad-left"></div>
 <div class="side-ad-right"></div>
 
-<!-- 広告ストック置き場（読者には見えません） -->
-<div id="ad-pool" style="display: none;">
 
-    <!-- ▼ 広告（スマホ買取のモバゾウ） -->
+<!-- ============================================================
+     ★【PC専用】広告ストック置き場（300x250などを入れる）
+     ============================================================ -->
+<div id="pc-ad-pool" style="display: none;">
+
+    <!-- ▼ PC用広告1（300x250） -->
+      <!-- ▼ 広告（スマホ買取のモバゾウ） -->
     <div class="ad-item">
         <a href="https://px.a8.net/svt/ejp?a8mat=4BEHXC+CGWUWI+5NTS+5ZMCH" rel="nofollow">
         <img border="0" width="300" height="250" alt="" src="https://www22.a8.net/svt/bgt?aid=261016896754&wid=001&eno=01&mid=s00000026416001006000&mc=1"></a>
@@ -61,34 +78,103 @@
         <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BEHXC+B2WG36+3V2O+1BO6EP" alt="">
     </div>
 
+</div>
+
+
+<!-- ============================================================
+     ★【スマホ専用】広告ストック置き場（320x50などの横長を入れる）
+     ============================================================ -->
+<div id="mobile-ad-pool" style="display: none;">
+
+    <!-- ▼ 広告（現金キャッシュバック実施中！最短翌日開通！次世代接続方式v6プラス利用可能光回線【イツキ光】） -->
+    <div class="mobile-ad-item">
+       <a href="https://px.a8.net/svt/ejp?a8mat=4BEHXC+D2CGOI+4VXM+601S1" rel="nofollow">
+        <img border="0" width="320" height="50" alt="" src="https://www21.a8.net/svt/bgt?aid=261016896790&wid=001&eno=01&mid=s00000022801001008000&mc=1"></a>
+        <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BEHXC+D2CGOI+4VXM+601S1" alt="">
+    </div>
+ 
+    <!-- ▼ 広告（中古パソコンならお任せ【中古パソコンショップ Be-Stock】） -->
+    <div class="mobile-ad-item">
+        <a href="https://px.a8.net/svt/ejp?a8mat=4BEHXC+CVSP0Y+3JD0+BZ8OX" rel="nofollow">
+        <img border="0" width="320" height="50" alt="" src="https://www26.a8.net/svt/bgt?aid=261016896779&wid=001&eno=01&mid=s00000016506002012000&mc=1"></a>
+        <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4BEHXC+CVSP0Y+3JD0+BZ8OX" alt="">
+    </div>
+
+    <!-- ▼ 広告（最新GPUも格安構成も自由に選べる！パソコン買うならBTOの【FRONTIER】） -->
+    <div class="mobile-ad-item">
+        <a href="https://px.a8.net/svt/ejp?a8mat=4BEHXC+BMJR1U+3KX4+62ENL" rel="nofollow">
+        <img border="0" width="320" height="50" alt="" src="https://www21.a8.net/svt/bgt?aid=261016896703&wid=001&eno=01&mid=s00000016708001019000&mc=1"></a>
+        <img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4BEHXC+BMJR1U+3KX4+62ENL" alt="">
+    </div>
+
+    <!-- ▼ 広告（スマホ買取のモバゾウ） -->
+    <div class="mobile-ad-item">
+        <a href="https://px.a8.net/svt/ejp?a8mat=4BEHXC+CGWUWI+5NTS+5ZU29" rel="nofollow">
+        <img border="0" width="320" height="50" alt="" src="https://www22.a8.net/svt/bgt?aid=261016896754&wid=001&eno=01&mid=s00000026416001007000&mc=1"></a>
+        <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4BEHXC+CGWUWI+5NTS+5ZU29" alt="">
+    </div>
+
+    <!-- ▼ 広告（iPhoneデータ復旧・基板修理サービス【FIREBIRD】） -->
+    <div class="mobile-ad-item">
+        <a href="https://px.a8.net/svt/ejp?a8mat=4BEHXC+CEJ4HE+36GA+HX5B5" rel="nofollow">
+        <img border="0" width="320" height="50" alt="" src="https://www29.a8.net/svt/bgt?aid=261016896750&wid=001&eno=01&mid=s00000014833003010000&mc=1"></a>
+        <img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4BEHXC+CEJ4HE+36GA+HX5B5" alt="">
+    </div>
+
+    <!-- ▼ 広告（【宅配買取】イヤホン・ヘッドホン専門店【e☆イヤホン（買取プログラム）】） -->
+    <div class="mobile-ad-item">
+        <a href="https://px.a8.net/svt/ejp?a8mat=4BEHXC+B7NWXE+55QO+C8GHD" rel="nofollow">
+        <img border="0" width="320" height="50" alt="" src="https://www26.a8.net/svt/bgt?aid=261016896678&wid=001&eno=01&mid=s00000024072002055000&mc=1"></a>
+        <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4BEHXC+B7NWXE+55QO+C8GHD" alt="">
+    </div>
+
+    <!-- ▼ 広告（多種多様なパソコン・周辺機器を絶賛買取しています！【パソコン買取アローズ】） -->
+    <div class="mobile-ad-item">
+        <a href="https://px.a8.net/svt/ejp?a8mat=4BEHXC+B2WG36+3V2O+1BOE4H" rel="nofollow">
+        border="0" width="320" height="50" alt="" src="https://www20.a8.net/svt/bgt?aid=261016896670&wid=001&eno=01&mid=s00000018024008008000&mc=1"></a>
+        <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4BEHXC+B2WG36+3V2O+1BOE4H" alt="">
+    </div>
+
+
+
 
 </div>
 
-<!-- 自動ランダム抽選プログラム -->
+
+<!-- ============================================================
+     ★自動振り分け＆ランダム抽選プログラム（安全設計）
+     ============================================================ -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    const pool = document.querySelectorAll("#ad-pool .ad-item");
-    // 有効な広告タグが入っているものだけを抽出
-    const validAds = Array.from(pool).filter(item => item.innerHTML.trim().length > 10);
-    if (validAds.length === 0) return;
-
-    // 左側の広告をランダム抽選
-    const leftIndex = Math.floor(Math.random() * validAds.length);
-    const leftContainer = document.querySelector(".side-ad-left");
-    if (leftContainer) {
-        leftContainer.innerHTML = validAds[leftIndex].innerHTML;
+    // --- 1. スマホ用の抽選（mobile-ad-pool からだけ選ぶ） ---
+    const mobilePool = document.querySelectorAll("#mobile-ad-pool .mobile-ad-item");
+    const validMobileAds = Array.from(mobilePool).filter(item => item.innerHTML.trim().length > 10);
+    const mobileTarget = document.querySelector(".mobile-ad-target");
+    
+    if (validMobileAds.length > 0 && mobileTarget) {
+        const mobileIndex = Math.floor(Math.random() * validMobileAds.length);
+        mobileTarget.innerHTML = validMobileAds[mobileIndex].innerHTML;
     }
 
-    // 右側の広告を抽選（広告が2つ以上あれば左と違うものを表示）
-    let rightIndex = Math.floor(Math.random() * validAds.length);
-    if (validAds.length > 1) {
-        while (rightIndex === leftIndex) {
-            rightIndex = Math.floor(Math.random() * validAds.length);
+    // --- 2. PC用の抽選（pc-ad-pool からだけ選ぶ） ---
+    const pcPool = document.querySelectorAll("#pc-ad-pool .pc-ad-item");
+    const validPcAds = Array.from(pcPool).filter(item => item.innerHTML.trim().length > 10);
+    
+    if (validPcAds.length > 0) {
+        // 左側の広告
+        const leftIndex = Math.floor(Math.random() * validPcAds.length);
+        const leftContainer = document.querySelector(".side-ad-left");
+        if (leftContainer) leftContainer.innerHTML = validPcAds[leftIndex].innerHTML;
+
+        // 右側の広告（左と被らない）
+        let rightIndex = Math.floor(Math.random() * validPcAds.length);
+        if (validPcAds.length > 1) {
+            while (rightIndex === leftIndex) {
+                rightIndex = Math.floor(Math.random() * validPcAds.length);
+            }
         }
-    }
-    const rightContainer = document.querySelector(".side-ad-right");
-    if (rightContainer) {
-        rightContainer.innerHTML = validAds[rightIndex].innerHTML;
+        const rightContainer = document.querySelector(".side-ad-right");
+        if (rightContainer) rightContainer.innerHTML = validPcAds[rightIndex].innerHTML;
     }
 });
 </script>
