@@ -351,3 +351,112 @@ p, li, h1, h2, h3, h4, h5, h6, blockquote {
         vertical-align: middle;
     }
 }
+
+/* ============================================================
+   9. トップページ：自己紹介エリアのスリム＆横並び化
+   ============================================================ */
+/* 全体の余白を詰める */
+.first-entry {
+    margin-top: 10px !important;
+}
+
+.profile-card-container {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/* ★PC：アイコン（左） ＋ 自己紹介（右）の横並び配置★ */
+.profile-main-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+/* PCでのアイコンサイズ（130px） */
+.profile-avatar {
+    width: 130px !important;
+    height: 130px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.profile-bio-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #1d1d1f;
+}
+
+.profile-amazon-note {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.78rem;
+    color: #777;
+    font-style: italic;
+}
+
+.profile-action-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.btn-view-posts {
+    padding: 6px 20px;
+    background: var(--tertiary);
+    color: #ffffff !important;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: opacity 0.2s;
+}
+
+.btn-view-posts:hover {
+    opacity: 0.85;
+}
+
+/* ============================================================
+   ★スマホ専用：アイコンを半分に縮小 ＆ 上にギュッと詰める★
+   ============================================================ */
+@media screen and (max-width: 768px) {
+    .home-info {
+        padding-top: 0px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .profile-main-row {
+        flex-direction: column !important; /* スマホは縦並びを維持 */
+        gap: 10px !important;
+        text-align: center !important;
+        margin-bottom: 8px !important;
+    }
+
+    /* ★スマホではアイコンを約半分の100pxに縮小！ */
+    .profile-avatar {
+        width: 100px !important;
+        height: 100px !important;
+        margin-bottom: 2px !important;
+    }
+
+    .profile-bio-text {
+        font-size: 0.85rem !important;
+        line-height: 1.5 !important;
+        padding: 0 5px;
+    }
+
+    .profile-amazon-note {
+        margin-top: 4px !important;
+        font-size: 0.7rem !important;
+    }
+
+    .btn-view-posts {
+        padding: 5px 16px !important;
+        font-size: 0.85rem !important;
+    }
+}
