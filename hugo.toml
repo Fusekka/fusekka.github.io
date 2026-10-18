@@ -51,8 +51,7 @@ enableRobotsTXT = true
             <span class="profile-amazon-note">当ブログはAmazonのアソシエイトとして適格販売により収入を得ています。また、プロモーションが含まれています</span>
         </div>
     </div>
-    
-    <div class="profile-action-row">
+<div class="profile-action-row">
         <a href="/posts" class="btn-view-posts">記事を見る</a>
     </div>
 </div>
