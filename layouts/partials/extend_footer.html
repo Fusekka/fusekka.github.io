@@ -133,7 +133,7 @@
 
 
 <!-- ============================================================
-     ★自動振り分け＆記事中自動挿入プログラム
+     ★自動振り分け＆記事中自動挿入プログラム（PCダブルレクタングル対応）
      ============================================================ -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileTarget.innerHTML = validMobileAds[mobileIndex].innerHTML;
     }
 
-    // 2. 本文中の『3. なぜこうなった？』の直前に広告を割り込ませる（PC・スマホ両対応）
+    // 2. 本文中の『3. なぜこうなった？』の直前に広告を割り込ませる
     const pcPool = document.querySelectorAll("#pc-ad-pool .pc-ad-item");
     const validAds = Array.from(pcPool).filter(item => item.innerHTML.trim().length > 10);
     
@@ -157,34 +157,61 @@ document.addEventListener("DOMContentLoaded", function () {
         let targetHeading = null;
         
         headings.forEach(h2 => {
-            // 見出しのテキストに「なぜこうなった」または「3.」が含まれている場所を特定
             if (h2.textContent.includes("なぜこうなった") || h2.textContent.includes("3.")) {
                 targetHeading = h2;
             }
         });
 
-        // 該当見出しが見つかったら、その直前にランダム広告を自動挿入
+        // 該当見出しが見つかったら挿入
         if (targetHeading) {
             const adContainer = document.createElement("div");
             adContainer.className = "in-article-ad";
-            adContainer.style.textAlign = "center";
-            adContainer.style.margin = "2.5rem 0";
+            adContainer.style.cssText = "text-align: center; margin: 3rem 0; width: 100%; clear: both;";
             
-            // 広告枠と分かる控えめなラベル
+            // ラベル
             const adLabel = document.createElement("div");
             adLabel.textContent = "スポンサーリンク";
-            adLabel.style.fontSize = "11px";
-            adLabel.style.color = "#888";
-            adLabel.style.marginBottom = "6px";
+            adLabel.style.cssText = "font-size: 11px; color: #888; margin-bottom: 8px;";
             adContainer.appendChild(adLabel);
 
-            // ランダムに広告を1つ選んでセット
-            const randomIndex = Math.floor(Math.random() * validAds.length);
-            const adContent = document.createElement("div");
-            adContent.innerHTML = validAds[randomIndex].innerHTML;
-            adContainer.appendChild(adContent);
+            // 広告を並べるフレックスボックス親要素
+            const adRow = document.createElement("div");
+            adRow.style.cssText = "display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;";
 
-            // 見出しの「直前」に差し込む
+            // PCかスマホかの判定（画面幅 768px より大きいならPC）
+            const isPC = window.innerWidth > 768;
+
+            if (isPC && validAds.length >= 2) {
+                // ★PCの場合：重複しないように2個選んで横並び！
+                const firstIdx = Math.floor(Math.random() * validAds.length);
+                let secondIdx = Math.floor(Math.random() * validAds.length);
+                
+                // 1個目と被ったら選び直す
+                while (secondIdx === firstIdx) {
+                    secondIdx = Math.floor(Math.random() * validAds.length);
+                }
+
+                // 1個目の広告
+                const ad1 = document.createElement("div");
+                ad1.innerHTML = validAds[firstIdx].innerHTML;
+                adRow.appendChild(ad1);
+
+                // 2個目の広告
+                const ad2 = document.createElement("div");
+                ad2.innerHTML = validAds[secondIdx].innerHTML;
+                adRow.appendChild(ad2);
+
+            } else {
+                // ★スマホの場合（または広告が1つしかない場合）：1個だけ中央配置
+                const randomIndex = Math.floor(Math.random() * validAds.length);
+                const adSingle = document.createElement("div");
+                adSingle.innerHTML = validAds[randomIndex].innerHTML;
+                adRow.appendChild(adSingle);
+            }
+
+            adContainer.appendChild(adRow);
+
+            // 見出しの直前に差し込む
             targetHeading.parentNode.insertBefore(adContainer, targetHeading);
         }
     }
