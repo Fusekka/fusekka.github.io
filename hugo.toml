@@ -39,7 +39,7 @@ enableRobotsTXT = true
         Content = """
 <div class="profile-card-container">
   <div class="profile-main-row">
-    <img class="profile-avatar" src="/profile.jpg" alt="Fusekka">
+    <img class="profile-avatar" src="/profile.jpg" alt="Fusekka" style="border-radius: 50% !important; object-fit: cover !important; display: block;">
     <div class="profile-bio-text">
       世界中のジャンク修理・魔改造DIYを眺めるのが好きな逸般人のブログ。<br>
       海外掲示板などで見つけたヤバい修理事例や、クスッと笑えるDIYハックを日本語でまとめています。<br>
