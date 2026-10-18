@@ -1,51 +1,59 @@
 /* ============================================================
-   1. サイト全体の文字色を黒に固定 ＆ 隙間ゼロ
+   1. サイト全体の文字色と背景 ＆ ★中央幅の拡張（840px）★
    ============================================================ */
-html, body {
+html {
+    background-color: #000000 !important;
+}
+
+body {
     margin: 0 !important;
     padding: 0 !important;
     background-color: #ffffff !important;
-}
-
-/* サイト全体の基本文字色 */
-html, body, p, li, h1, h2, h3, h4, h5, h6, blockquote {
     color: #1d1d1f !important;
 }
 
-/* 記事本文とタイトルの強制色指定 */
-.post-title, .post-content, .entry-header, .entry-content, .entry-header h2 {
+/* 記事本文とタイトルの文字色（黒） */
+.post-title, .post-content, .entry-header, .entry-content, .entry-header h2,
+p, li, h1, h2, h3, h4, h5, h6, blockquote {
     color: #1d1d1f !important;
 }
 
-/* 背景色設定 */
+/* ★中央コンテンツの横幅を720pxから「840px」に広げる★ */
 :root {
     --theme: #ffffff !important;
     --content: #ffffff !important;
+    --main-width: 840px !important; /* 黄金比の840pxへ拡張！ */
     --tertiary: #33ccff !important; 
     --industrial-yellow: #FFD700 !important;
     --vscode-purple: #6a40ed !important;
 }
 
+.main {
+    max-width: 840px !important;
+    padding-top: 20px !important;
+}
+
 /* ============================================================
-   2. ヘッダー（★PCでは常に上部に固定）
+   2. ヘッダー（黒背景 ＆ 文字は白）
    ============================================================ */
 .header {
     background: #000000 !important;
-    padding: 6px 0 !important; 
+    padding-top: calc(env(safe-area-inset-top) + 4px) !important;
+    padding-bottom: 4px !important;
     border-bottom: 2px solid var(--tertiary) !important;
-    position: sticky !important; /* PCでは固定！スクロールしても付いてくる */
+    position: sticky !important;
     top: 0 !important;
     margin-top: 0 !important;
     z-index: 1000;
 }
 
-/* ヘッダー内の文字（ロゴやメニュー）は白 */
-.header *, .nav a, .logo a, #menu a {
+.header, .header *, .header a, .nav, .nav *, .nav a, .logo a, #menu a, #menu span {
     color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
 }
 
 /* ============================================================
-   3. Amazonブログカード（白背景に黒文字）
+   3. Amazon風ブログカードの修正（白背景に黒文字）
    ============================================================ */
 .blog-card-container {
     margin: 2.5rem 0;
@@ -151,10 +159,6 @@ html, body, p, li, h1, h2, h3, h4, h5, h6, blockquote {
 /* ============================================================
    4. その他レイアウト調整
    ============================================================ */
-.main {
-    padding-top: 20px !important;
-}
-
 .home-info {
     display: flex !important;
     flex-direction: column !important;
@@ -167,33 +171,35 @@ html, body, p, li, h1, h2, h3, h4, h5, h6, blockquote {
 }
 
 /* ============================================================
-   5. スマホ専用の表示崩れ防止（★スマホだけスクロールで消す）
+   5. スマホ専用の表示崩れ防止（画面幅768px以下）
    ============================================================ */
 @media screen and (max-width: 768px) {
-    /* スマホでは固定を解除！隙間なく密着させてスクロールで消えるようにする */
     .header {
-        position: relative !important; /* 固定を解除して流れるようにする */
+        position: relative !important;
         top: 0 !important;
-        padding: 4px 0 !important;
+        padding-top: calc(env(safe-area-inset-top) + 12px) !important;
+        padding-bottom: 8px !important;
     }
     
     .nav {
-        padding: 0 8px !important;
+        padding: 0 12px !important;
         min-height: auto !important;
     }
 
     .logo a {
         font-size: 1.05rem !important;
         white-space: nowrap !important;
-        line-height: 1.2 !important;
+        line-height: 1.4 !important;
+        display: inline-block !important;
+        margin-bottom: 4px !important;
     }
 
     #menu {
-        gap: 5px !important;
-        margin-top: 2px !important;
+        gap: 6px !important;
+        margin-top: 4px !important;
     }
     #menu a {
-        font-size: 0.75rem !important;
+        font-size: 0.76rem !important;
         padding: 2px 2px !important;
     }
 
@@ -240,43 +246,40 @@ html, body, p, li, h1, h2, h3, h4, h5, h6, blockquote {
 }
 
 /* ============================================================
-   7. PC専用・左右の追従サイドバー広告
+   7. PC専用・左右の追従サイドバー広告（★840pxに合わせて位置調整）
    ============================================================ */
 .side-ad-left, .side-ad-right {
     position: fixed !important;
-    top: 90px !important;       /* ヘッダーの下から固定 */
-    width: 300px !important;    /* 300×250が入る幅 */
+    top: 90px !important;
+    width: 300px !important;
     height: 250px !important;
     z-index: 90;
     text-align: center;
 }
 
-/* 左側の広告の位置 */
+/* ★中央が840px（半分は420px）になったので、435px外側に配置 */
 .side-ad-left {
-    right: calc(50% + 380px) !important;
+    right: calc(50% + 435px) !important;
 }
 
-/* 右側の広告の位置 */
 .side-ad-right {
-    left: calc(50% + 380px) !important;
+    left: calc(50% + 435px) !important;
 }
 
-/* ★スマホや小さな画面のPCでは自動で消す */
-@media screen and (max-width: 1400px) {
+/* 画面幅が1480px未満（小さい画面）では非表示にして重なりを防ぐ */
+@media screen and (max-width: 1480px) {
     .side-ad-left, .side-ad-right {
         display: none !important;
     }
 }
 
 /* ============================================================
-   8. スマホ専用・画面下部の浮き出る追従バナー（オーバーレイ広告）
+   8. スマホ専用・画面下部の浮き出る追従バナー
    ============================================================ */
-/* PCでは絶対に非表示 */
 .mobile-bottom-ad {
     display: none;
 }
 
-/* スマホ（画面幅768px以下）の時だけ最下部に固定表示 */
 @media screen and (max-width: 768px) {
     .mobile-bottom-ad {
         display: block !important;
@@ -285,10 +288,10 @@ html, body, p, li, h1, h2, h3, h4, h5, h6, blockquote {
         left: 0 !important;
         right: 0 !important;
         width: 100% !important;
-        background: rgba(0, 0, 0, 0.85) !important; /* 少し透ける黒背景で目立たせる */
+        background: rgba(0, 0, 0, 0.85) !important;
         text-align: center !important;
         padding: 6px 0 !important;
-        padding-bottom: calc(env(safe-area-inset-bottom) + 6px) !important; /* iPhoneの下部バー対応 */
+        padding-bottom: calc(env(safe-area-inset-bottom) + 6px) !important;
         z-index: 9999 !important;
         box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3) !important;
     }
@@ -299,7 +302,6 @@ html, body, p, li, h1, h2, h3, h4, h5, h6, blockquote {
         max-width: 100%;
     }
 
-    /* ✕（閉じる）ボタン */
     .mobile-ad-close {
         position: absolute;
         top: -16px;
