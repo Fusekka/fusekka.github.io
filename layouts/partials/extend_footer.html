@@ -1,23 +1,18 @@
 <!-- ============================================================
-     1. スマホ専用：画面下部フロート広告枠
+     1. スマホ専用：画面下部フロート広告枠（維持）
      ============================================================ -->
 <div class="mobile-bottom-ad" id="mobileAdBox">
     <div class="mobile-ad-inner">
         <span class="mobile-ad-close" onclick="document.getElementById('mobileAdBox').style.display='none'">✕</span>
-        <!-- ここにスマホ用の細長バナーが入ります -->
         <div class="mobile-ad-target"></div>
     </div>
 </div>
 
-<!-- ============================================================
-     2. PC専用：左右の追従広告枠
-     ============================================================ -->
-<div class="side-ad-left"></div>
-<div class="side-ad-right"></div>
+<!-- ※PC左右の広告枠（side-ad-left / side-ad-right）は完全に削除しました -->
 
 
 <!-- ============================================================
-     ★【PC専用】広告ストック置き場（300x250）
+     ★【記事中 ＆ PC・スマホ共通】広告ストック置き場（300x250）
      ============================================================ -->
 <div id="pc-ad-pool" style="display: none;">
 
@@ -81,7 +76,7 @@
 
 
 <!-- ============================================================
-     ★【スマホ専用】広告ストック置き場（320x50）
+     ★【スマホ下部専用】広告ストック置き場（320x50）
      ============================================================ -->
 <div id="mobile-ad-pool" style="display: none;">
 
@@ -127,7 +122,7 @@
         <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4BEHXC+B7NWXE+55QO+C8GHD" alt="">
     </div>
 
-    <!-- ▼ 広告（パソコン買取アローズ） ★修復完了！ -->
+    <!-- ▼ 広告（パソコン買取アローズ） -->
     <div class="mobile-ad-item">
         <a href="https://px.a8.net/svt/ejp?a8mat=4BEHXC+B2WG36+3V2O+1BOE4H" rel="nofollow">
         <img border="0" width="320" height="50" alt="" src="https://www20.a8.net/svt/bgt?aid=261016896670&wid=001&eno=01&mid=s00000018024008008000&mc=1"></a>
@@ -138,11 +133,11 @@
 
 
 <!-- ============================================================
-     ★自動振り分け＆ランダム抽選プログラム（安全設計）
+     ★自動振り分け＆記事中自動挿入プログラム
      ============================================================ -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    // 1. スマホ用（mobile-ad-poolから抽選）
+    // 1. スマホ下部フロート広告（そのまま維持）
     const mobilePool = document.querySelectorAll("#mobile-ad-pool .mobile-ad-item");
     const validMobileAds = Array.from(mobilePool).filter(item => item.innerHTML.trim().length > 10);
     const mobileTarget = document.querySelector(".mobile-ad-target");
@@ -152,25 +147,46 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileTarget.innerHTML = validMobileAds[mobileIndex].innerHTML;
     }
 
-    // 2. PC用（pc-ad-poolから抽選）
+    // 2. 本文中の『3. なぜこうなった？』の直前に広告を割り込ませる（PC・スマホ両対応）
     const pcPool = document.querySelectorAll("#pc-ad-pool .pc-ad-item");
-    const validPcAds = Array.from(pcPool).filter(item => item.innerHTML.trim().length > 10);
+    const validAds = Array.from(pcPool).filter(item => item.innerHTML.trim().length > 10);
     
-    if (validPcAds.length > 0) {
-        // 左側の広告
-        const leftIndex = Math.floor(Math.random() * validPcAds.length);
-        const leftContainer = document.querySelector(".side-ad-left");
-        if (leftContainer) leftContainer.innerHTML = validPcAds[leftIndex].innerHTML;
-
-        // 右側の広告（左と被らないものを選ぶ）
-        let rightIndex = Math.floor(Math.random() * validPcAds.length);
-        if (validPcAds.length > 1) {
-            while (rightIndex === leftIndex) {
-                rightIndex = Math.floor(Math.random() * validPcAds.length);
+    if (validAds.length > 0) {
+        // 記事本文内の全h2見出しを探索
+        const headings = document.querySelectorAll(".post-content h2, article h2");
+        let targetHeading = null;
+        
+        headings.forEach(h2 => {
+            // 見出しのテキストに「なぜこうなった」または「3.」が含まれている場所を特定
+            if (h2.textContent.includes("なぜこうなった") || h2.textContent.includes("3.")) {
+                targetHeading = h2;
             }
+        });
+
+        // 該当見出しが見つかったら、その直前にランダム広告を自動挿入
+        if (targetHeading) {
+            const adContainer = document.createElement("div");
+            adContainer.className = "in-article-ad";
+            adContainer.style.textAlign = "center";
+            adContainer.style.margin = "2.5rem 0";
+            
+            // 広告枠と分かる控えめなラベル
+            const adLabel = document.createElement("div");
+            adLabel.textContent = "スポンサーリンク";
+            adLabel.style.fontSize = "11px";
+            adLabel.style.color = "#888";
+            adLabel.style.marginBottom = "6px";
+            adContainer.appendChild(adLabel);
+
+            // ランダムに広告を1つ選んでセット
+            const randomIndex = Math.floor(Math.random() * validAds.length);
+            const adContent = document.createElement("div");
+            adContent.innerHTML = validAds[randomIndex].innerHTML;
+            adContainer.appendChild(adContent);
+
+            // 見出しの「直前」に差し込む
+            targetHeading.parentNode.insertBefore(adContainer, targetHeading);
         }
-        const rightContainer = document.querySelector(".side-ad-right");
-        if (rightContainer) rightContainer.innerHTML = validPcAds[rightIndex].innerHTML;
     }
 });
 </script>
