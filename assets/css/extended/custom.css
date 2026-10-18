@@ -171,48 +171,74 @@ p, li, h1, h2, h3, h4, h5, h6, blockquote {
 }
 
 /* ============================================================
-   5. スマホ専用の表示崩れ防止（画面幅768px以下）
+   5. スマホ専用の表示崩れ防止 ＆ ★文字サイズのスリム化★
    ============================================================ */
 @media screen and (max-width: 768px) {
     .header {
         position: relative !important;
         top: 0 !important;
-        padding-top: calc(env(safe-area-inset-top) + 12px) !important;
-        padding-bottom: 8px !important;
+        padding-top: calc(env(safe-area-inset-top) + 10px) !important;
+        padding-bottom: 6px !important;
     }
     
     .nav {
-        padding: 0 12px !important;
+        padding: 0 10px !important;
         min-height: auto !important;
     }
 
+    /* ① ブログ名（少し小さくして12 miniでも確実に1行キープ） */
     .logo a {
-        font-size: 1.05rem !important;
+        font-size: 0.98rem !important;
         white-space: nowrap !important;
         line-height: 1.4 !important;
         display: inline-block !important;
-        margin-bottom: 4px !important;
+        margin-bottom: 3px !important;
     }
 
     #menu {
-        gap: 6px !important;
-        margin-top: 4px !important;
+        gap: 5px !important;
+        margin-top: 3px !important;
     }
     #menu a {
-        font-size: 0.76rem !important;
+        font-size: 0.74rem !important;
         padding: 2px 2px !important;
     }
 
+    /* ② 記事タイトル（長文でも画面を圧迫しないサイズに縮小） */
     .post-title {
-        font-size: 1.35rem !important;
-        line-height: 1.4 !important;
-        margin-top: 10px !important;
-        margin-bottom: 12px !important;
+        font-size: 1.2rem !important;
+        line-height: 1.45 !important;
+        margin-top: 8px !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* ③ 記事本文（スマホで読みやすいスッキリした大きさに縮小） */
+    .post-content {
+        font-size: 0.95rem !important;
+        line-height: 1.8 !important;
+    }
+
+    /* 本文内の段落の隙間もスマホ向けに少し引き締め */
+    .post-content p {
+        margin-bottom: 1.4rem !important;
+    }
+
+    /* 見出し（H2・H3）も本文に合わせて少し縮小 */
+    .post-content h2 {
+        font-size: 1.2rem !important;
+        margin-top: 2.2rem !important;
+        margin-bottom: 0.8rem !important;
+    }
+
+    .post-content h3 {
+        font-size: 1.05rem !important;
+        margin-top: 1.6rem !important;
+        margin-bottom: 0.6rem !important;
     }
 
     .breadcrumbs {
-        font-size: 0.8rem !important;
-        margin-bottom: 5px !important;
+        font-size: 0.75rem !important;
+        margin-bottom: 4px !important;
     }
 }
 
