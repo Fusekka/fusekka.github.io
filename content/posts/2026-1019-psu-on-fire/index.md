@@ -54,9 +54,9 @@ PCパーツの中で、**「絶対にケチってはいけないパーツ」**�
 
 電源が生きているか、あるいは異常な電圧が出ていないかをテストする場合は、マザーボードやパーツに繋ぐ前に必ず専用の**「デジタルPC電源チェッカー」**を使って、各レーン（+12V、+5V、+3.3Vなど）の出力が安全範囲に収まっているかを確認するのが自作・修理の鉄則です。数千円のテスターを1台持っておくだけで、高価なグラボやマザーボードを道連れにする最悪の事故を確実に防ぐことができますよ！
 
-<!-- 【アフィリエイト挿入枠】
-{{< blogcard url="★ここにAmazonアソシエイトURLを貼る★" title="PC電源テスター 液晶デジタル表示 ATX/BTX/ITX対応 20/24ピン 電圧チェッカー" image="★ここに商品画像URLを貼る★" description="通電前に各レーンの電圧異常をひと目でチェック可能。ジャンク電源の動作確認やトラブル診断に必須の定番ツールです。" >}}
--->
+
+{{< blogcard url="https://link.amazon/B0eXxfo4B" title="MacLab. PC電源テスター 液晶デジタル表示 ATX/BTX/ITX対応 20/24ピン 電圧チェッカー" image="https://m.media-amazon.com/images/I/81EOTKXAJwL._AC_SL1200_.jpg" description="通電前に各レーンの電圧異常をひと目でチェック可能。ジャンク電源の動作確認やトラブル診断に必須の定番ツールです。" >}}
+
 
 ---
 **引用元・元スレッド：** [Cooking - Reddit (r/hardwaregore)](https://www.reddit.com/r/hardwaregore/comments/1x8z3v2/cooking/)
