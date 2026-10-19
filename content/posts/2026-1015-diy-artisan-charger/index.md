@@ -127,5 +127,5 @@ DIYや魔改造はハードウェアの仕組みを理解し、安全マージ�
 ---
 ### 🛠️ 今回の魔改造・修理におすすめのアイテム
 
-{{< blogcard url="https://link.amazon/B01vJveIF" title="Anker Nano II 65W 充電器 USB-C PD" image="!https://m.media-amazon.com/images/I/51p3xiAi7KL._AC_SL1500_.jpg" description="幅広い機器に急速充電可能: USB PowerDelivery (PD) 対応の65W出力で、スマートフォンからノートPCまで幅広い機器に急速充電できるUSB充電器です。利用機器毎に異なる充電器を持ち運ぶ必要はありません。" >}}
+{{< blogcard url="https://link.amazon/B01vJveIF" title="Anker Nano II 65W 充電器 USB-C PD" image="https://m.media-amazon.com/images/I/51p3xiAi7KL._AC_SL1500_.jpg" description="幅広い機器に急速充電可能: USB PowerDelivery (PD) 対応の65W出力で、スマートフォンからノートPCまで幅広い機器に急速充電できるUSB充電器です。利用機器毎に異なる充電器を持ち運ぶ必要はありません。" >}}
 ---
