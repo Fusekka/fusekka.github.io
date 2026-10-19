@@ -73,6 +73,6 @@ TocOpen: false
 ---
 ### 🛠️ 今回の魔改造・修理におすすめのアイテム
 
-{{< blogcard url="★ここにAmazonアソシエイトURLを貼る★" title="Anker PowerWave 10 Stand (ワイヤレス充電器)" image="★ここに商品画像URLを貼る★" description="ノートPCを改造して火を吹かせる前に！デスクの横に置くだけで安全・快適にスマホを急速充電できる定番Qiスタンドです。" >}}
+{{< blogcard url="https://link.amazon/B0iCEOBG4" title="Amazonベーシック ワイヤレス充電パッド 25W Qi2.2認証 MagSafe対応" image="https://m.media-amazon.com/images/I/61Dwiy--LUL._AC_SL1500_.jpg" description="ノートPCを改造して火を吹かせる前に！デスクの横に置くだけで安全・快適にスマホを急速充電できる定番Qiスタンドです。" >}}
 ---
 -->
