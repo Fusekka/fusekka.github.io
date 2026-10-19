@@ -77,6 +77,6 @@ Dellの「INSPIRON」ロゴとAndroidのシステムUIが同居する異様な�
 ---
 ### 🛠️ 今回の魔改造・修理におすすめのアイテム
 
-{{< blogcard url="★ここにAmazonアソシエイトURLを貼る★" title="UGREEN USB Type C 有線LAN HDMI 変換アダプタ 多機能ハブ" image="★ここに商品画像URLを貼る★" description="画面が割れたスマホの画面出力やマウス接続に必須！1台持っておくとジャンク救出時に大活躍するマルチハブです。" >}}
+{{< blogcard url="https://link.amazon/B02pPsiST" title="UGREEN 1061 Revodok USB-Cハブ 4K@30Hz HDMI出力 100W急速充電 5Gbpsデータ転送 1GbpsLANポート 多機能ハブ" image="https://m.media-amazon.com/images/I/61t9zD3NI6L._AC_SL1500_.jpg" description="画面が割れたスマホの画面出力やマウス接続に必須！1台持っておくとジャンク救出時に大活躍するマルチハブです。" >}}
 ---
 -->
