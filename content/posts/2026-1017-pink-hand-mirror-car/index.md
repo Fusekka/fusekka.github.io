@@ -1,4 +1,5 @@
 ---
+slug: "pink-hand-mirror-car"
 draft: false
 title: "【もげたら貼るだけ！？】サイドミラーが破損したアメ車、まさかの「ピンクの手鏡」で魔改造補修してしまうww"
 slug: "pink-hand-mirror-car"
