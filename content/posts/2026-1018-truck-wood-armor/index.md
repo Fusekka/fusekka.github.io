@@ -1,4 +1,5 @@
 ---
+slug: "truck-wood-armor"
 draft: false
 title: "【狂気のウッドパネル】「フェイク木目はお断り」愛車の側面に本物の丸太をボルト留めしたトラックが激写されるｗｗｗ"
 slug: "truck-wood-armor"
