@@ -64,6 +64,6 @@ TocOpen: false
 ---
 ### 🛠️ 今回の魔改造・修理におすすめのアイテム
 
-{{< blogcard url="https://www.amazon.co.jp/dp/B003BEE3B0" title="カーメイト 車用 サイドミラー サブミラー 扇形 CZ244" image="https://m.media-amazon.com/images/I/61rU8oH+WfL._AC_SL1000_.jpg" description="手鏡を貼る前にこれ！死角を大幅に減らす粘着固定式の車検対応ワイドアングル補助ミラー。" >}}
+{{< blogcard url="https://link.amazon/B0d7blv2B" title="カーメイト 車用 サイドミラー サブミラー 扇形 CZ244" image="https://m.media-amazon.com/images/I/41VvH7F2HrL._AC_SL1000_.jpg" description="手鏡を貼る前にこれ！死角を大幅に減らす粘着固定式の車検対応ワイドアングル補助ミラー。" >}}
 ---
 -->
