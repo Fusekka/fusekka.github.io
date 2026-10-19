@@ -1,4 +1,5 @@
 ---
+slug: "sony-phone-retro-gaming-laptop"
 draft: false
 title: "【魔改造】画面が死んだXperiaを古のDellノートPCと合体！？異形のレトロゲーム専用機が爆誕してしまうｗｗｗ"
 description: "画面が逝ったソニーのスマホを救うため、海外ニキが古いDellのノートPCと魔合体！画面右端に鎮座する見慣れたAndroidボタンにネット民騒然。ジャンク同士の奇跡の蘇生劇を徹底解説！"
