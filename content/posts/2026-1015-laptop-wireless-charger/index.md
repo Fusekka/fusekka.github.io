@@ -1,4 +1,5 @@
 ---
+slug: "laptop-wireless-charger"
 draft: false
 title: "【狂気】「ノートPCのパームレストにQi充電器を埋め込みたい」海外ニキのDIY計画が危険すぎてツッコミ殺到ｗｗｗ"
 description: "海外掲示板Redditで話題の魔改造計画。DellのノートPCのパームレスト下にスマホ用ワイヤレス充電コイルを埋め込もうとする猛者が登場。発熱と干渉で爆発不可避とツッコミの嵐に！"
