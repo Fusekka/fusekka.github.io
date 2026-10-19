@@ -1,4 +1,5 @@
 ---
+slug: "breaking-news-macgyver-fix"
 draft: false
 title: "【天才か狂気か】「画面が映ればヨシ！」海外ニキがやらかした物理的すぎる『BREAKING NEWS』受信魔改造に世界が騒然ｗｗｗ"
 description: "海外掲示板Redditで話題沸騰！「BREAKING NEWS」を受信するために強行された狂気のDIY修理がヤバすぎると話題に。電気的リスクをガン無視して強引に画面を映し出した衝撃の光景と海外ニキたちの爆笑リアクションを徹底解説！"
