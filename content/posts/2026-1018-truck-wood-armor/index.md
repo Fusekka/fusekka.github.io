@@ -59,10 +59,10 @@ TocOpen: false
 ---
 **引用元・元スレッド：** [None of that cheap, fake vinyl wood. Strictly 100% organic, locally sourced, free-range oak. - Reddit (r/redneckengineering)](https://www.reddit.com/r/redneckengineering/comments/1x860b2/none_of_that_cheap_fake_vinyl_wood_strictly_100/)
 
-<!-- 【アフィリエイト挿入枠】
+
 ---
 ### 🛠️ 今回の魔改造・修理におすすめのアイテム
 
-{{< blogcard url="https://www.amazon.co.jp/dp/B00C4Q4S84" title="3M 超強力両面テープ 自動車外装用 幅15mm×長さ1.5m" image="https://m.media-amazon.com/images/I/71u+9ZfFqJL._AC_SL1500_.jpg" description="車体の保護パーツ固定には本物の丸太用ボルトではなく自動車外装専用の超強力両面テープを使いましょう。" >}}
+{{< blogcard url="https://link.amazon/B02ijzIGK" title="3M 超強力両面テープ 自動車外装用 幅15mm×長さ1.5m" image="https://m.media-amazon.com/images/I/718V2heenUL._SL1500_.jpg" description="車体の保護パーツ固定には本物の丸太用ボルトではなく自動車外装専用の超強力両面テープを使いましょう。" >}}
 ---
--->
+

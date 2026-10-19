@@ -60,10 +60,10 @@ TocOpen: false
 ---
 **引用元・元スレッド：** [As seen in the wild - Reddit (r/redneckengineering)](https://www.reddit.com/r/redneckengineering/comments/1x3qw3s/as_seen_in_the_wild/)
 
-<!-- 【アフィリエイト挿入枠】
+
 ---
 ### 🛠️ 今回の魔改造・修理におすすめのアイテム
 
-{{< blogcard url="https://link.amazon/B0d7blv2B" title="カーメイト 車用 サイドミラー サブミラー 扇形 CZ244" image="https://m.media-amazon.com/images/I/41VvH7F2HrL._AC_SL1000_.jpg" description="手鏡を貼る前にこれ！死角を大幅に減らす粘着固定式の車検対応ワイドアングル補助ミラー。" >}}
+{{< blogcard url="https://link.amazon/B00FxEOMt" title="カーメイト(CARMATE) サイドミラー 撥水 ゼロワイパーフィルム C204" image="https://m.media-amazon.com/images/I/71Gh62sQIWL._AC_SL1280_.jpg" description="サイドミラーに雨が付かない！貼り付けるだけ！視界クリア！ゼロワイパー超撥水フィルム。" >}}
 ---
--->
+

@@ -56,10 +56,9 @@ TocOpen: false
 ---
 **引用元・元スレッド：** [I found an automatic litter box in the trash and put an xbox logo on it. We got the catBox 360 before GTA 6. - Reddit (r/DiWHY)](https://www.reddit.com/r/DiWHY/comments/1x8g7ld/i_found_an_automatic_litter_box_in_the_trash_and/)
 
-<!-- 【アフィリエイト挿入枠】
+
 ---
 ### 🛠️ 今回の魔改造・修理におすすめのアイテム
 
-{{< blogcard url="https://www.amazon.co.jp/dp/B07V2C4K9B" title="シルエットジャパン 小型カッティングマシン シルエットカメオ4" image="https://m.media-amazon.com/images/I/61Yg4F5yvVL._AC_SL1500_.jpg" description="ガジェットの魔改造やオリジナルロゴステッカー作成に最適な定番カッティングマシン。曲面にも綺麗に貼れる高品質デカールを自作できます。" >}}
+{{< blogcard url="https://link.amazon/B0cr0tkCE" title="デオトイレ 消臭・抗菌サンド 猫砂 4.5L" image="https://m.media-amazon.com/images/I/81RnyRyqlkL._AC_SL1500_.jpg" description="オシッコとウンチを強力消臭するデオトイレ専用取替サンド" >}}
 ---
--->

@@ -55,9 +55,9 @@ TocOpen: false
 
 今回ニキのデスク中央にも敷かれていた青いマットは、ハンダゴテの熱（最大500℃程度）に耐えられるだけでなく、ネジや小物パーツを小分けできるポケットが付いているため、分解中の「ネジが行方不明になる問題」を完全に防いでくれます。木製デスクを焦がす心配もなくなるため、ジャンク修理入門には必須の神アイテムです。
 
-<!-- 【アフィリエイト挿入枠】
-{{< blogcard url="https://www.amazon.co.jp/dp/B073S4XTF7" title="Kaisi 耐熱シリコン作業マット 500℃耐熱 はんだ付け用" image="https://m.media-amazon.com/images/I/71J1x8T+r4L._AC_SL1500_.jpg" description="ハンダの熱から机を守りネジの紛失も防止する基板リペア・電子工作の必須アイテム。" >}}
--->
+
+{{< blogcard url="https://link.amazon/B0hBxbYUs" title="Kaisi 耐熱シリコン作業マット 500℃耐熱 はんだ付け用" image="https://m.media-amazon.com/images/I/61VOV0mjHkL._AC_SL1500_.jpg" description="ハンダの熱から机を守りネジの紛失も防止する基板リペア・電子工作の必須アイテム。" >}}
+
 
 ---
 **引用元・元スレッド：** [Rate my workbench - Reddit (r/consolerepair)](https://www.reddit.com/r/consolerepair/comments/1x73cqr/rate_my_workbench/)

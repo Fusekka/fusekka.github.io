@@ -50,9 +50,9 @@ TocOpen: false
 
 特に映像ケーブルの端子部や基板のフレキコネクタは、ホコリや酸化被膜で接触不良を起こしがち。まずは定番の「接点復活スプレー」を使って端子を洗浄し、しっかり奥まで差し直すだけであっさり直るケースも少なくありません。
 
-<!-- 【アフィリエイト挿入枠】
-{{< blogcard url="https://www.amazon.co.jp/dp/B000TGF8D0" title="KURE(呉工業) コンタクトスプレー(300ml) 接点復活剤" image="https://m.media-amazon.com/images/I/71u9sW4fVUL._AC_SL1500_.jpg" description="電子機器のコネクタや基板端子の接触不良を解消する定番の速乾性接点復活剤。" >}}
--->
+
+{{< blogcard url="https://link.amazon/B08kroS4T" title="KURE(呉工業) コンタクトスプレー(300ml) 接点復活剤" image="https://m.media-amazon.com/images/I/61Tt4EzQnjL._SL1500_.jpg" description="電子機器のコネクタや基板端子の接触不良を解消する定番の速乾性接点復活剤。" >}}
+
 
 サイネージのような密閉機器は熱対策も命。基板が完全に焼けてしまう前に、日頃のメンテナンスや通気性の確保を心がけたいものですね！
 

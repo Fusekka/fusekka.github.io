@@ -53,9 +53,9 @@ TocOpen: false
 
 DCファンを外部アダプタで回したり、低電圧配線を分岐・自作する場合、絶対にやってはいけないのが「芯線をよじっただけのむき出し配線」です。安全に実験や仮設運用をするなら、ハンダ付けと熱収縮チューブによる絶縁か、難燃性の**耐熱絶縁カプトンテープ（ポリイミドテープ）**で確実に被覆・保護するのが鉄則です。カプトンテープは電子工作や基板の絶縁修理でも超定番の神アイテムなので、デスクに1巻き常備しておくだけで不意のショート事故を劇的に防げますよ！
 
-<!-- 【アフィリエイト挿入枠】
-{{< blogcard url="★ここにAmazonアソシエイトURLを貼る★" title="高耐熱絶縁ポリイミドテープ（カプトンテープ同等品）" image="★ここに商品画像URLを貼る★" description="電子工作やPC配線のショート防止に必須。高熱に耐え糊残りしにくい定番絶縁テープ。" >}}
--->
+
+{{< blogcard url="https://link.amazon/B03CJ3OyW" title="絶縁 耐熱 ポリイミドテープ カプトンテープ" image="https://m.media-amazon.com/images/I/41qqLDcCKHL._SL1000_.jpg" description="電子工作やPC配線のショート防止に必須。高熱に耐え糊残りしにくい定番絶縁テープ。" >}}
+
 
 ---
 **引用元・元スレッド：** [My temporary homelab setup - Reddit (r/techsupportmacgyver)](https://www.reddit.com/r/techsupportmacgyver/comments/1x85p5b/my_temporary_homelab_setup/)

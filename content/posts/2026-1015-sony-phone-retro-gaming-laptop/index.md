@@ -73,10 +73,10 @@ Dellの「INSPIRON」ロゴとAndroidのシステムUIが同居する異様な�
 
 **引用元・元スレッド：** [Just turned a dead Sony phone into a lil machine for retro games - Reddit](https://www.reddit.com/r/techsupportmacgyver/comments/1x3etu7/just_turned_a_dead_sony_phone_into_a_lil_machine/)
 
-<!-- 【アフィリエイト挿入枠】
+
 ---
 ### 🛠️ 今回の魔改造・修理におすすめのアイテム
 
-{{< blogcard url="https://link.amazon/B02pPsiST" title="UGREEN 1061 Revodok USB-Cハブ 4K@30Hz HDMI出力 100W急速充電 5Gbpsデータ転送 1GbpsLANポート 多機能ハブ" image="https://m.media-amazon.com/images/I/61t9zD3NI6L._AC_SL1500_.jpg" description="画面が割れたスマホの画面出力やマウス接続に必須！1台持っておくとジャンク救出時に大活躍するマルチハブです。" >}}
+{{< blogcard url="https://link.amazon/B0dM7TRDR" title="UGREEN 1061 Revodok USB-Cハブ 4K@30Hz HDMI出力 100W急速充電 5Gbpsデータ転送 1GbpsLANポート 多機能ハブ" image="https://m.media-amazon.com/images/I/61t9zD3NI6L._AC_SL1500_.jpg" description="画面が割れたスマホの画面出力やマウス接続に必須！1台持っておくとジャンク救出時に大活躍するマルチハブです。" >}}
 ---
--->
+

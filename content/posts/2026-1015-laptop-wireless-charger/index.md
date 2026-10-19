@@ -69,10 +69,9 @@ TocOpen: false
 
 **引用元・元スレッド：** [Making my laptop wireless charger for my phone - Reddit](https://www.reddit.com/r/techsupportmacgyver/comments/1x1d351/making_my_laptop_wireless_charger_for_my_phone/)
 
-<!-- 【アフィリエイト挿入枠】
+
 ---
 ### 🛠️ 今回の魔改造・修理におすすめのアイテム
 
-{{< blogcard url="https://link.amazon/B0iCEOBG4" title="Amazonベーシック ワイヤレス充電パッド 25W Qi2.2認証 MagSafe対応" image="https://m.media-amazon.com/images/I/61Dwiy--LUL._AC_SL1500_.jpg" description="ノートPCを改造して火を吹かせる前に！デスクの横に置くだけで安全・快適にスマホを急速充電できる定番Qiスタンドです。" >}}
+{{< blogcard url="https://link.amazon/B0c9wSbWV" title="Amazonベーシック ワイヤレス充電パッド 25W Qi2.2認証 MagSafe対応" image="https://m.media-amazon.com/images/I/61Dwiy--LUL._AC_SL1500_.jpg" description="ノートPCを改造して火を吹かせる前に！デスクの横に置くだけで安全・快適にスマホを急速充電できる定番Qi充電パッドです。" >}}
 ---
--->
