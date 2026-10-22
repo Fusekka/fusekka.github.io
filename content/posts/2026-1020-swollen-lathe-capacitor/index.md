@@ -53,9 +53,9 @@ TocOpen: false
 
 膨らんだコンデンサは問答無用で同容量・同耐圧以上の新品と交換するのが鉄則ですが、外見上は綺麗でも容量が抜けているケースが多々あります。安全に修理するためにも、コンデンサ容量（キャパシタンス）測定機能のついたデジタルマルチテスターを1台持っておくと、作業効率が段違いに上がりますよ！
 
-<!-- 【アフィリエイト挿入枠】
-{{< blogcard url="https://www.amazon.co.jp/dp/B08G89Q8T2" title="KAIWEETS デジタルマルチメーター 静電容量・抵抗・導通測定対応" image="https://m.media-amazon.com/images/I/71u9iL4fVqL._AC_SL1500_.jpg" description="モーター用コンデンサの容量抜けも一発判定。DIY修理や基板チェックに1台あると重宝する高精度テスター。" >}}
--->
+
+{{< blogcard url="https://link.amazon/B03OUbdTM" title="オーム(OHM) デジタルテスター 普及型" image="https://m.media-amazon.com/images/I/81VZ1fldmhL._SL1500_.jpg" description="モーター用コンデンサの容量抜けも一発判定。DIY修理や基板チェックに1台あると重宝する高精度テスター。" >}}
+
 
 ジャンク品をメンテする際は、電源を切った後でもコンデンサに残った高電圧に十分注意して、安全第一で修理ライフを楽しみましょう！
 

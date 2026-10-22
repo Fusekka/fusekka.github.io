@@ -53,9 +53,9 @@ TocOpen: false
 
 電圧や極性を確認しながら安全に修理・工作を楽しむなら、まずは確実な電源環境とテスターを揃えるところから始めましょう。
 
-<!-- 【アフィリエイト挿入枠】
-{{< blogcard url="★ここにAmazonアソシエイトURLを貼る★" title="デジタルマルチメーター 高精度テスター AC/DC電圧測定" image="★ここに商品画像URLを貼る★" description="ジャンク修理や自作電源の電圧チェックに必須。直結して基板を燃やす前に必ず電圧と極性を測定しましょう。" >}}
--->
+
+{{< blogcard url="https://link.amazon/B03OUbdTM" title="オーム(OHM) デジタルテスター 普及型" image="https://m.media-amazon.com/images/I/81VZ1fldmhL._SL1500_.jpg" description="ジャンク修理や自作電源の電圧チェックに必須。直結して基板を燃やす前に必ず電圧と極性を測定しましょう。" >}}
+
 
 真似して部屋を火の海にしないよう、電源周りの魔改造はくれぐれも自己責任で！
 

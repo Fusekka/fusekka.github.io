@@ -51,9 +51,9 @@ TocOpen: false
 
 家庭内の低圧配線やガジェット工作・ジャンク修理でケーブル同士を繋ぐ場合でも、結束バンドで縛るなんてのは論外。しっかり芯線を圧着するか、レバー操作だけで安全・確実に結線できる**WAGO（ワゴ）のワンタッチコネクタ**などの定番ツールを使うのが鉄則です。
 
-<!-- 【アフィリエイト挿入枠】
-{{< blogcard url="https://www.amazon.co.jp/dp/B002MRR5O8" title="ワゴジャパン WAGO ワンタッチコネクター WFR-2 (10個入)" image="https://m.media-amazon.com/images/I/51r2t4R1pJL._AC_SL1000_.jpg" description="レバーを起こして線を挿すだけで安全・確実に結線できるプロ御用達コネクタ。工具不要でガジェット改造の配線処理にも最適。" >}}
--->
+
+{{< blogcard url="https://link.amazon/B09dICrA0" title="ワゴジャパン WAGO ワンタッチコネクター WFR-2 (10個入)" image="https://m.media-amazon.com/images/I/61guvS07JkL._SL1073_.jpg" description="レバーを起こして線を挿すだけで安全・確実に結線できるプロ御用達コネクタ。工具不要でガジェット改造の配線処理にも最適。" >}}
+
 
 結束バンドはPCの裏配線やケーブルマネジメントなど、適切な場所で安全に使いましょう！
 
