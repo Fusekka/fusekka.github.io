@@ -1,10 +1,12 @@
+{{- $amazonUrl := .Get "amazon_url" | default (.Get "url") -}}
+{{- $rakutenUrl := .Get "rakuten_url" -}}
 <div class="blog-card-container">
-    <a href="{{ .Get "url" }}" target="_blank" rel="noopener noreferrer sponsored" class="blog-card-link">
+    <div class="blog-card-box">
         <div class="blog-card-thumb">
             {{- if .Get "image" -}}
                 <img src="{{ .Get "image" }}" alt="{{ .Get "title" }}" loading="lazy">
             {{- else -}}
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ff9900" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#ff9900" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
                 </svg>
             {{- end -}}
@@ -12,7 +14,14 @@
         <div class="blog-card-content">
             <div class="blog-card-title">{{ .Get "title" }}</div>
             <div class="blog-card-desc">{{ .Get "description" }}</div>
-            <div class="blog-card-footer">{{ .Get "footer" | default "Amazonでチェック →" }}</div>
+            <div class="blog-card-actions">
+                {{- if $amazonUrl -}}
+                    <a href="{{ $amazonUrl }}" target="_blank" rel="noopener noreferrer sponsored" class="blog-card-btn btn-amazon">Amazonで探す</a>
+                {{- end -}}
+                {{- if $rakutenUrl -}}
+                    <a href="{{ $rakutenUrl }}" target="_blank" rel="noopener noreferrer sponsored" class="blog-card-btn btn-rakuten">楽天市場で探す</a>
+                {{- end -}}
+            </div>
         </div>
-    </a>
+    </div>
 </div>
