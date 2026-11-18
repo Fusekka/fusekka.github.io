@@ -34,6 +34,9 @@ enableRobotsTXT = true
         favicon16x16 = "/favicon.ico"
         favicon32x32 = "/favicon.ico"
         apple_touch_icon = "/favicon.ico"
+        
+[params.cover]
+    relative = true
 
 [params.homeInfoParams]
         Content = """
