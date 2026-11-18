@@ -460,3 +460,62 @@ p, li, h1, h2, h3, h4, h5, h6, blockquote {
         font-size: 0.85rem !important;
     }
 }
+
+/* ============================================================
+   10. もしもアフィリエイト風・2ボタンカード用スタイル
+   ============================================================ */
+.blog-card-box {
+    display: flex !important;
+    align-items: stretch;
+    background: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    min-height: 150px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.blog-card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.blog-card-btn {
+    display: inline-block !important;
+    padding: 8px 16px !important;
+    border-radius: 6px !important;
+    font-size: 0.85rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    transition: opacity 0.2s ease, transform 0.1s ease !important;
+}
+
+.blog-card-btn:hover {
+    opacity: 0.88 !important;
+    transform: translateY(-1px);
+}
+
+.btn-amazon {
+    background-color: #f59e0b !important;
+}
+
+.btn-rakuten {
+    background-color: #bf0000 !important;
+}
+
+@media screen and (max-width: 640px) {
+    .blog-card-box {
+        flex-direction: row;
+        min-height: auto;
+        align-items: center;
+    }
+    .blog-card-btn {
+        padding: 6px 12px !important;
+        font-size: 0.78rem !important;
+    }
+}
